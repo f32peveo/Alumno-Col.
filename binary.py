@@ -2,64 +2,66 @@ import loki as lk
 import matplotlib.pyplot as plt
 import numpy as np
 
+def cargar_energias(path="databaseStateEnergyHe.txt"):
+    energy_dict = {}
+    with open(path, "r") as f:
+        for linea in f:
+            if not linea.startswith('%') and linea.strip():
+                parts = linea.strip().split()
+                species = ' '.join(parts[:-1])
+                energy = float(parts[-1])
+                energy_dict[species] = energy
+    return energy_dict
+
 def main(file):
-    # Parsear el archivo químico
     uniqueSpecies, reactions = lk.parseChemFile(file)
 
-    # Inicializar matrices binarias como listas de diccionarios
     reactantsMatrix = []
     productsMatrix = []
 
-    # Construcción de matrices binarias utilizando diccionarios
     for reaction in reactions:
-        # Crear diccionarios para reactivos y productos
         reactantsRow = {species: 0 for species in uniqueSpecies}
         productsRow = {species: 0 for species in uniqueSpecies}
 
-        # Marcar las especies en reactivos y productos
         for species in reaction['lhsSpecies']:
             reactantsRow[species] = 1
-            # if reaction['backwardReaction']:
-            #     productsRow[species] = 1  # También marcar como producto
-
         for species in reaction['rhsSpecies']:
             productsRow[species] = 1
-            # if reaction['backwardReaction']:
-            #     reactantsRow[species] = 1  # También marcar como reactivo
 
-        # Convertir los diccionarios a listas y agregar a las matrices
         reactantsMatrix.append(list(reactantsRow.values()))
         productsMatrix.append(list(productsRow.values()))
 
-    # Guardar las matrices como archivos .npy
     np.save('reactantsMatrix.npy', reactantsMatrix)
     np.save('productsMatrix.npy', productsMatrix)
 
-    # Mostrar las matrices binarias con imshow antes de los histogramas
-    mostrar_matriz_binaria(reactantsMatrix, uniqueSpecies, "Matriz binaria de Reactivos")
-    mostrar_matriz_binaria(productsMatrix, uniqueSpecies, "Matriz binaria de Productos")
-    plt.show()
-
-    # Calcular el grado de los nodos para las especies (suma de cada columna)
     reactantsDegree = [sum(col) for col in zip(*reactantsMatrix)]
     productsDegree = [sum(col) for col in zip(*productsMatrix)]
 
-    np.save('reactantsDegree', reactantsDegree)
-    np.save('productsDegree', productsDegree)
+    np.save('reactantsDegree.npy', reactantsDegree)
+    np.save('productsDegree.npy', productsDegree)
 
-    # Crear histogramas del grado de los nodos
+    # Ordenar por energía
+    energy_dict = cargar_energias()
+    ordered_species = [s for s, _ in sorted(energy_dict.items(), key=lambda x: x[1]) if s in uniqueSpecies]
+
+    # Reordenar los grados
+    reactantsDegree_sorted = [reactantsDegree[uniqueSpecies.index(s)] for s in ordered_species]
+    productsDegree_sorted = [productsDegree[uniqueSpecies.index(s)] for s in ordered_species]
+
+    # Gráficas
+    mostrar_matriz_binaria(reactantsMatrix, ordered_species, "Matriz binaria de Reactivos")
+    mostrar_matriz_binaria(productsMatrix, ordered_species, "Matriz binaria de Productos")
+    plt.show()
+
     fig, axes = plt.subplots(1, 2, figsize=(12, 6))
 
-    # Histograma para los reactivos
-    axes[0].bar(uniqueSpecies, reactantsDegree, color='blue', alpha=0.7)
+    axes[0].bar(ordered_species, reactantsDegree_sorted, color='blue', alpha=0.7)
     axes[0].set_title("Grado de Nodos - Reactivos")
     axes[0].set_xlabel("Especies")
     axes[0].set_ylabel("Grado")
     axes[0].tick_params(axis='x', rotation=90)
-    
 
-    # Histograma para los productos
-    axes[1].bar(uniqueSpecies, productsDegree, color='orange', alpha=0.7)
+    axes[1].bar(ordered_species, productsDegree_sorted, color='orange', alpha=0.7)
     axes[1].set_title("Grado de Nodos - Productos")
     axes[1].set_xlabel("Especies")
     axes[1].set_ylabel("Grado")
@@ -70,21 +72,17 @@ def main(file):
 
     plt.hist(reactantsDegree, bins=50, color='blue', alpha=0.7, label='Reactivos', range=(0, 100))
     plt.hist(productsDegree, bins=50, color='orange', alpha=0.7, label='Productos', range=(0, 100))
+    plt.legend()
     plt.show()
 
-
 def mostrar_matriz_binaria(matriz, speciesList, titulo):
-    # Aumentamos el tamaño de la figura para que la cuadricula se vea más grande.
     plt.figure(figsize=(10, 6))
-    # Usamos 'binary' para que el valor 1 se muestre en negro y 0 en blanco
     plt.imshow(matriz, cmap='binary', interpolation='nearest', aspect='auto')
     plt.title(titulo)
     plt.xlabel("Especies")
     plt.ylabel("Reacciones")
     plt.xticks(range(len(speciesList)), speciesList, rotation=90)
     plt.tight_layout()
-    #plt.show()
-
 
 if __name__ == "__main__":
     main('helium.chem')
