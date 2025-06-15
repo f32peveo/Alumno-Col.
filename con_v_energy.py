@@ -55,5 +55,3 @@ if __name__ == "__main__":
 
     # Generar el gráfico
     plot_connectivity_vs_energy(energies, connectivity, species, title="Reactants Connectivity vs Energy")
-
-
