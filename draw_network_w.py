@@ -33,13 +33,11 @@ def construir_red_bipartita(uniqueSpecies, reactions):
 
     return B
 
-def dibujar_red_bipartita(B, species_nodes, reaction_nodes):
-    # Layout bipartito para mejor orden y separación
+def dibujar_red_bipartita(B, species_nodes, reaction_nodes, titulo="Red Bipartita"):
     plt.figure(figsize=(18, 10))
     pos = {}
-    pos.update(nx.bipartite_layout(B, species_nodes, align='vertical', scale=100))  # scale más grande
+    pos.update(nx.bipartite_layout(B, species_nodes, align='vertical', scale=100))
 
-    # Tamaños de nodos más pequeños
     sizes_species = [max(10, sum(B[u][v]['weight'] for u in B.neighbors(v)) * 5) for v in species_nodes]
     sizes_reactions = [20 for _ in reaction_nodes]
 
@@ -48,25 +46,31 @@ def dibujar_red_bipartita(B, species_nodes, reaction_nodes):
     nx.draw_networkx_edges(B, pos, width=1, alpha=0.6)
     nx.draw_networkx_labels(B, pos, font_size=7)
 
-    plt.title("Red Bipartita")
+    plt.title(titulo)
     plt.axis('off')
     plt.legend()
     plt.tight_layout()
     plt.show()
 
 def main():
-    # Leer especies y reacciones originales
     uniqueSpecies, reactions = lk.parseChemFile("helium.chem")
-
-    # Excluir el electrón
     species_nodes = [s for s in uniqueSpecies if s != 'e']
-
-    # Reacciones ordenadas por su identificador
     reaction_nodes = [f"R{i}" for i in range(len(reactions))]
-
-    # Construcción y visualización de red
     B = construir_red_bipartita(uniqueSpecies, reactions)
-    dibujar_red_bipartita(B, species_nodes, reaction_nodes)
+
+    # Mostrar por bloques de 100 reacciones
+    bloque = 100
+    for start in range(0, len(reaction_nodes), bloque):
+        end = min(start + bloque, len(reaction_nodes))
+        sub_reactions = reaction_nodes[start:end]
+        # Especies conectadas a estas reacciones
+        sub_species = set()
+        for r in sub_reactions:
+            sub_species.update(B.neighbors(r))
+        sub_species = list(sub_species)
+        # Subgrafo
+        subB = B.subgraph(sub_species + sub_reactions)
+        dibujar_red_bipartita(subB, sub_species, sub_reactions, titulo=f"Reacciones {start+1}-{end}")
 
 if __name__ == "__main__":
     main()
