@@ -48,6 +48,8 @@ def main(file):
     # Reordenar los grados
     reactantsDegree_sorted = [reactantsDegree[uniqueSpecies.index(s)] for s in ordered_species]
     productsDegree_sorted = [productsDegree[uniqueSpecies.index(s)] for s in ordered_species]
+    np.save('reactantsDegree_sorted.npy', np.array(reactantsDegree_sorted))
+    np.save('productsDegree_sorted.npy', np.array(productsDegree_sorted))
 
     # Gráficas
     mostrar_matriz_binaria(reactantsMatrix, ordered_species, "Matriz binaria de Reactivos")
