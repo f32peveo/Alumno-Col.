@@ -67,7 +67,7 @@ def main():
         sub_species = set()
         for r in sub_reactions:
             sub_species.update(B.neighbors(r))
-        sub_species = list(sub_species)
+        sub_species = [s for s in sub_species if s != 'e'] 
         # Subgrafo
         subB = B.subgraph(sub_species + sub_reactions)
         dibujar_red_bipartita(subB, sub_species, sub_reactions, titulo=f"Reacciones {start+1}-{end}")
