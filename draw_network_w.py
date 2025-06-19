@@ -34,20 +34,21 @@ def construir_red_bipartita(uniqueSpecies, reactions):
     return B
 
 def dibujar_red_bipartita(B, species_nodes, reaction_nodes):
-    # Layout bipartito para mejor orden
+    # Layout bipartito para mejor orden y separación
+    plt.figure(figsize=(18, 10))
     pos = {}
-    pos.update(nx.bipartite_layout(B, species_nodes, align='vertical', scale=2))
+    pos.update(nx.bipartite_layout(B, species_nodes, align='vertical', scale=100))  # scale más grande
 
-    # Tamaños de nodos más pequeños y mínimos
-    sizes_species = [max(50, sum(B[u][v]['weight'] for u in B.neighbors(v)) * 30) for v in species_nodes]
-    sizes_reactions = [100 for _ in reaction_nodes]
+    # Tamaños de nodos más pequeños
+    sizes_species = [max(10, sum(B[u][v]['weight'] for u in B.neighbors(v)) * 5) for v in species_nodes]
+    sizes_reactions = [20 for _ in reaction_nodes]
 
     nx.draw_networkx_nodes(B, pos, nodelist=species_nodes, node_size=sizes_species, node_color='skyblue', label='Especies')
     nx.draw_networkx_nodes(B, pos, nodelist=reaction_nodes, node_size=sizes_reactions, node_color='salmon', label='Reacciones')
     nx.draw_networkx_edges(B, pos, width=1, alpha=0.6)
     nx.draw_networkx_labels(B, pos, font_size=7)
 
-    plt.title("Red Bipartita (reacciones ordenadas)")
+    plt.title("Red Bipartita")
     plt.axis('off')
     plt.legend()
     plt.tight_layout()
