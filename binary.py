@@ -43,6 +43,7 @@ def main(file):
     # Ordenar por energía
     energy_dict = cargar_energias()
     ordered_species = [s for s, _ in sorted(energy_dict.items(), key=lambda x: x[1]) if s in uniqueSpecies]
+    np.save('ordered_species.npy', np.array(ordered_species))
 
     # Reordenar los grados
     reactantsDegree_sorted = [reactantsDegree[uniqueSpecies.index(s)] for s in ordered_species]
