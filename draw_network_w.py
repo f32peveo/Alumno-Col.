@@ -33,11 +33,7 @@ def construir_red_bipartita(uniqueSpecies, reactions):
 
     return B
 
-def dibujar_red_bipartita(B, species_order):
-    # Identificar nodos
-    species_nodes = [n for n in species_order if n in B.nodes]
-    reaction_nodes = [n for n, d in B.nodes(data=True) if d['tipo'] == 'reaccion']
-
+def dibujar_red_bipartita(B, species_nodes, reaction_nodes):
     # Layout bipartito para mejor orden
     pos = {}
     pos.update(nx.bipartite_layout(B, species_nodes, align='vertical', scale=2))
@@ -51,7 +47,7 @@ def dibujar_red_bipartita(B, species_order):
     nx.draw_networkx_edges(B, pos, width=1, alpha=0.6)
     nx.draw_networkx_labels(B, pos, font_size=7)
 
-    plt.title("Red Bipartita (especies ordenadas por energía)")
+    plt.title("Red Bipartita (reacciones ordenadas)")
     plt.axis('off')
     plt.legend()
     plt.tight_layout()
@@ -61,13 +57,15 @@ def main():
     # Leer especies y reacciones originales
     uniqueSpecies, reactions = lk.parseChemFile("helium.chem")
 
-    # Cargar energía y ordenar
-    energy_dict = cargar_energias()
-    ordered_species = [s for s, _ in sorted(energy_dict.items(), key=lambda x: x[1]) if s in uniqueSpecies]
+    # Excluir el electrón
+    species_nodes = [s for s in uniqueSpecies if s != 'e']
+
+    # Reacciones ordenadas por su identificador
+    reaction_nodes = [f"R{i}" for i in range(len(reactions))]
 
     # Construcción y visualización de red
     B = construir_red_bipartita(uniqueSpecies, reactions)
-    dibujar_red_bipartita(B, ordered_species)
+    dibujar_red_bipartita(B, species_nodes, reaction_nodes)
 
 if __name__ == "__main__":
     main()
