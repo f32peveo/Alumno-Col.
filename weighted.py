@@ -87,8 +87,8 @@ def main(file):
     reactantsDegree_sorted = [reactantsDegree[uniqueSpecies.index(s)] for s in ordered_species]
     productsDegree_sorted = [productsDegree[uniqueSpecies.index(s)] for s in ordered_species]
 
-    np.save('reactantsDegree_sorted.npy', np.array(reactantsDegree_sorted))
-    np.save('productsDegree_sorted.npy', np.array(productsDegree_sorted))
+    np.save(r"C:\Users\isafe\OneDrive\Desktop\Escritorio\FÍSICA\TFG\TFG\reactantsDegree_sorted.npy", np.array(reactantsDegree_sorted))
+    np.save(r"C:\Users\isafe\OneDrive\Desktop\Escritorio\FÍSICA\TFG\TFG\rproductsDegree_sorted.npy", np.array(productsDegree_sorted))
 
     mostrar_matriz(reactantsMatrix, ordered_species, "Matriz Ponderada Reactivos", cmap='Blues')
     mostrar_matriz(productsMatrix, ordered_species, "Matriz Ponderada Productos", cmap='Blues')
