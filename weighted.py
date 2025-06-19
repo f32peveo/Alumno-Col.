@@ -2,7 +2,16 @@ import loki as lk
 import matplotlib.pyplot as plt
 import numpy as np
 
-# === FUNCIONES AUXILIARES ===
+def cargar_energias(path="databaseStateEnergyHe.txt"):
+    energy_dict = {}
+    with open(path, "r") as f:
+        for linea in f:
+            if not linea.startswith('%') and linea.strip():
+                parts = linea.strip().split()
+                species = ' '.join(parts[:-1])
+                energy = float(parts[-1])
+                energy_dict[species] = energy
+    return energy_dict
 
 def mostrar_matriz(matriz, speciesList, titulo, cmap='Blues'):
     plt.figure(figsize=(10, 6))
@@ -44,8 +53,6 @@ def mostrar_histograma_global(reactantsDegree, productsDegree, rango=(0, 100)):
     plt.title("Distribución de Grado Ponderado")
     plt.show()
 
-# === PROGRAMA PRINCIPAL ===
-
 def main(file):
     uniqueSpecies, reactions = lk.parseChemFile(file)
 
@@ -64,22 +71,27 @@ def main(file):
         reactantsMatrix.append(list(reactantsRow.values()))
         productsMatrix.append(list(productsRow.values()))
 
-    # Guardar matrices con sufijo _w
     np.save('reactantsMatrix_w.npy', reactantsMatrix)
     np.save('productsMatrix_w.npy', productsMatrix)
-
-    mostrar_matriz(reactantsMatrix, uniqueSpecies, "Matriz Ponderada Reactivos", cmap='Blues')
-    mostrar_matriz(productsMatrix, uniqueSpecies, "Matriz Ponderada Productos", cmap='Blues')
-    plt.show()
 
     reactantsDegree = calcular_grados(reactantsMatrix)
     productsDegree = calcular_grados(productsMatrix)
 
-    # Guardar grados con sufijo _w
     np.save('reactantsDegree_w.npy', reactantsDegree)
     np.save('productsDegree_w.npy', productsDegree)
 
-    mostrar_histogramas_por_especie(uniqueSpecies, reactantsDegree, productsDegree, ponderado=True)
+    energy_dict = cargar_energias()
+    ordered_species = [s for s, _ in sorted(energy_dict.items(), key=lambda x: x[1]) if s in uniqueSpecies]
+    np.save('ordered_species.npy', np.array(ordered_species))
+
+    reactantsDegree_sorted = [reactantsDegree[uniqueSpecies.index(s)] for s in ordered_species]
+    productsDegree_sorted = [productsDegree[uniqueSpecies.index(s)] for s in ordered_species]
+
+    mostrar_matriz(reactantsMatrix, ordered_species, "Matriz Ponderada Reactivos", cmap='Blues')
+    mostrar_matriz(productsMatrix, ordered_species, "Matriz Ponderada Productos", cmap='Blues')
+    plt.show()
+
+    mostrar_histogramas_por_especie(ordered_species, reactantsDegree_sorted, productsDegree_sorted, ponderado=True)
     mostrar_histograma_global(reactantsDegree, productsDegree)
 
 if __name__ == "__main__":
