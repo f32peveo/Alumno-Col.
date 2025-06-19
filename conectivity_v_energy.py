@@ -1,7 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import os
-from loki import parseChemFile
 
 def load_energies():
     path = os.path.join(os.path.dirname(__file__), "databaseStateEnergyHe.txt")
@@ -51,15 +50,20 @@ def plot_connectivity_vs_energy(energy_dict, connectivity, species_names, title)
     plt.show()
 
 if __name__ == "__main__":
-    # Cargar conectividad desde archivo local
-    connectivity = np.load("reactantsDegree.npy")  # o "productsDegree.npy"
-
-    # Cargar especies desde archivo .chem con ruta completa
-    chem_path = r"C:\Users\isafe\OneDrive\Desktop\Escritorio\FÍSICA\TFG\helium.chem"
-    species, _ = parseChemFile(chem_path)
+    # Cargar arrays alineados y ordenados
+    ordered_species = np.load("ordered_species.npy", allow_pickle=True)
+    reactantsDegree_sorted = np.load("reactantsDegree_sorted.npy")
+    productsDegree_sorted = np.load("productsDegree_sorted.npy")
 
     # Cargar energías desde archivo local
     energies = load_energies()
 
-    # Graficar
-    plot_connectivity_vs_energy(energies, connectivity, species, title="Reactants Connectivity vs Energy")
+    # Plot para reactivos
+    plot_connectivity_vs_energy(
+        energies, reactantsDegree_sorted, ordered_species, title="Reactants Connectivity vs Energy"
+    )
+
+    # Plot para productos
+    plot_connectivity_vs_energy(
+        energies, productsDegree_sorted, ordered_species, title="Products Connectivity vs Energy"
+    )
