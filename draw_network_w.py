@@ -34,13 +34,17 @@ def construir_red_bipartita(uniqueSpecies, reactions):
     return B
 
 def dibujar_red_bipartita(B, species_order):
-    pos = nx.spring_layout(B, seed=42)
-
+    # Identificar nodos
     species_nodes = [n for n in species_order if n in B.nodes]
     reaction_nodes = [n for n, d in B.nodes(data=True) if d['tipo'] == 'reaccion']
 
-    sizes_species = [sum(B[u][v]['weight'] for u in B.neighbors(v)) * 100 for v in species_nodes]
-    sizes_reactions = [300 for _ in reaction_nodes]
+    # Layout bipartito para mejor orden
+    pos = {}
+    pos.update(nx.bipartite_layout(B, species_nodes, align='vertical', scale=2))
+
+    # Tamaños de nodos más pequeños y mínimos
+    sizes_species = [max(50, sum(B[u][v]['weight'] for u in B.neighbors(v)) * 30) for v in species_nodes]
+    sizes_reactions = [100 for _ in reaction_nodes]
 
     nx.draw_networkx_nodes(B, pos, nodelist=species_nodes, node_size=sizes_species, node_color='skyblue', label='Especies')
     nx.draw_networkx_nodes(B, pos, nodelist=reaction_nodes, node_size=sizes_reactions, node_color='salmon', label='Reacciones')
@@ -50,6 +54,7 @@ def dibujar_red_bipartita(B, species_order):
     plt.title("Red Bipartita (especies ordenadas por energía)")
     plt.axis('off')
     plt.legend()
+    plt.tight_layout()
     plt.show()
 
 def main():
