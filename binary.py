@@ -54,7 +54,8 @@ def main(file):
     # Gráficas
     mostrar_matriz_binaria(reactantsMatrix, ordered_species, "Matriz binaria de Reactivos")
     mostrar_matriz_binaria(productsMatrix, ordered_species, "Matriz binaria de Productos")
-    plt.show()
+    # plt.show()
+    # plt.savefig("matriz_binaria_productos.png", bbox_inches='tight', dpi=300)
 
     fig, axes = plt.subplots(1, 2, figsize=(12, 6))
 
@@ -75,8 +76,11 @@ def main(file):
 
     plt.hist(reactantsDegree, bins=50, color='blue', alpha=0.7, label='Reactivos', range=(0, 100))
     plt.hist(productsDegree, bins=50, color='orange', alpha=0.7, label='Productos', range=(0, 100))
+    plt.xlabel('Grado de conectividad')
+    plt.ylabel('Número de especies')
     plt.legend()
-    plt.show()
+    # plt.show()
+    plt.savefig("histograma_grado_conectividad.png", bbox_inches='tight', dpi=300)
 
 def mostrar_matriz_binaria(matriz, speciesList, titulo):
     plt.figure(figsize=(10, 6))
@@ -86,6 +90,8 @@ def mostrar_matriz_binaria(matriz, speciesList, titulo):
     plt.ylabel("Reacciones")
     plt.xticks(range(len(speciesList)), speciesList, rotation=90)
     plt.tight_layout()
+    plt.savefig(f"{titulo.replace(' ', '_').lower()}.png", bbox_inches='tight', dpi=300)
+    plt.close()
 
 if __name__ == "__main__":
     main('helium.chem')
