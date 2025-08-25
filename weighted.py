@@ -21,6 +21,9 @@ def mostrar_matriz(matriz, speciesList, titulo, cmap='Blues'):
     plt.ylabel("Reacciones")
     plt.xticks(range(len(speciesList)), speciesList, rotation=90)
     plt.tight_layout()
+    plt.savefig(f"{titulo.replace(' ', '_').lower()}.png")
+    plt.show()
+    plt.close()
 
 def calcular_grados(matriz):
     return [sum(col) for col in zip(*matriz)]
@@ -43,15 +46,18 @@ def mostrar_histogramas_por_especie(speciesList, reactantsDegree, productsDegree
 
     plt.tight_layout()
     plt.show()
+    plt.close()
 
 def mostrar_histograma_global(reactantsDegree, productsDegree, rango=(0, 100)):
     plt.hist(reactantsDegree, bins=50, color='blue', alpha=0.7, label='Reactivos', range=rango)
     plt.hist(productsDegree, bins=50, color='orange', alpha=0.7, label='Productos', range=rango)
     plt.legend()
     plt.xlabel("Grado Ponderado")
-    plt.ylabel("Frecuencia")
-    plt.title("Distribución de Grado Ponderado")
+    plt.ylabel("Número de especies")
+    plt.title("Grado de conectividad")
     plt.show()
+    plt.close()
+
 
 def main(file):
     uniqueSpecies, reactions = lk.parseChemFile(file)
@@ -93,6 +99,7 @@ def main(file):
     mostrar_matriz(reactantsMatrix, ordered_species, "Matriz Ponderada Reactivos", cmap='Blues')
     mostrar_matriz(productsMatrix, ordered_species, "Matriz Ponderada Productos", cmap='Blues')
     plt.show()
+    plt.close()
 
     mostrar_histogramas_por_especie(ordered_species, reactantsDegree_sorted, productsDegree_sorted, ponderado=True)
     mostrar_histograma_global(reactantsDegree, productsDegree)
