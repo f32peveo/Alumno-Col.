@@ -2,6 +2,7 @@ import numpy as np
 import networkx as nx
 import matplotlib.pyplot as plt
 import loki as lk
+import community as community_louvain
 
 # Cargar energías y ordenar especies
 def cargar_energias(path="databaseStateEnergyHe.txt"):
@@ -33,24 +34,20 @@ def construir_red_bipartita(uniqueSpecies, reactions):
 
     return B
 
-def dibujar_red_bipartita(B, species_nodes, reaction_nodes, titulo="Red Bipartita"):
-    plt.figure(figsize=(18, 10))
-    pos = {}
-    pos.update(nx.bipartite_layout(B, species_nodes, align='vertical', scale=100))
-
-    sizes_species = [max(10, sum(B[u][v]['weight'] for u in B.neighbors(v)) * 5) for v in species_nodes]
-    sizes_reactions = [20 for _ in reaction_nodes]
-
-    nx.draw_networkx_nodes(B, pos, nodelist=species_nodes, node_size=sizes_species, node_color='skyblue', label='Especies')
-    nx.draw_networkx_nodes(B, pos, nodelist=reaction_nodes, node_size=sizes_reactions, node_color='salmon', label='Reacciones')
-    nx.draw_networkx_edges(B, pos, width=1, alpha=0.6)
-    nx.draw_networkx_labels(B, pos, font_size=7)
-
+def dibujar_red_bipartita(B, species_nodes, reaction_nodes, titulo="Red Bipartita", height=40):
+    plt.figure(figsize=(18, height))
+    pos = nx.bipartite_layout(B, species_nodes)
+    nx.draw(B, pos, with_labels=True, node_size=50,
+            node_color=['lightblue' if n in species_nodes else 'lightgreen' for n in B.nodes()],
+            edge_color='gray', font_size=8, font_color='black')
     plt.title(titulo)
     plt.axis('off')
-    plt.legend()
     plt.tight_layout()
-    plt.show()
+    # plt.show()
+    plt.gcf().set_size_inches(6, 4)           # tamaño físico razonable
+    plt.savefig("red_bipartita.pdf", bbox_inches="tight")
+    plt.close()
+
 
 def main():
     uniqueSpecies, reactions = lk.parseChemFile("helium.chem")
@@ -58,19 +55,41 @@ def main():
     reaction_nodes = [f"R{i}" for i in range(len(reactions))]
     B = construir_red_bipartita(uniqueSpecies, reactions)
 
-    # Mostrar por bloques de 100 reacciones
-    bloque = 100
-    for start in range(0, len(reaction_nodes), bloque):
-        end = min(start + bloque, len(reaction_nodes))
-        sub_reactions = reaction_nodes[start:end]
-        # Especies conectadas a estas reacciones
-        sub_species = set()
-        for r in sub_reactions:
-            sub_species.update(B.neighbors(r))
-        sub_species = [s for s in sub_species if s != 'e'] 
-        # Subgrafo
-        subB = B.subgraph(sub_species + sub_reactions)
-        dibujar_red_bipartita(subB, sub_species, sub_reactions, titulo=f"Reacciones {start+1}-{end}")
+    # Dibujar toda la red bipartita en una sola imagen
+    altura = max(10, len(species_nodes) * 0.5 + len(reaction_nodes) * 0.2)
+    dibujar_red_bipartita(B, species_nodes, reaction_nodes, titulo="Red Bipartita Completa", height=altura)
+
+    # Proyectar la red bipartita en una red de especies
+    G = nx.bipartite.projected_graph(B, species_nodes, multigraph=False)
+    plt.figure(figsize=(12, 8))
+    pos = nx.spring_layout(G, seed=42)
+    nx.draw(G, pos, with_labels=True, node_color='lightblue', edge_color='gray', font_size=8, font_color='black')
+    # plt.title("Red Proyectada de Especies")
+    plt.show()
+    # plt.savefig("red_proyectada_especies.png", bbox_inches='tight', dpi=300)
+
+    # Aplicar la detección de comunidades
+    partition = community_louvain.best_partition(G, weight='weight', resolution=1.0)
+    # Dibujar la red con las comunidades
+    plt.figure(figsize=(12, 8))
+    pos = nx.spring_layout(G, seed=42)
+    cmap = plt.cm.get_cmap('viridis', max(partition.values()) + 1)
+    node_colors = [cmap(partition[n]) if n in partition else (0.5, 0.5, 0.5, 1.0) for n in G.nodes()]  # Gray for missing
+
+    nx.draw(G, pos, with_labels=True, node_size=50, node_color=node_colors, edge_color='gray', font_size=8)
+
+    # nx.draw(G, pos, with_labels=True, node_size=50, node_color=[cmap(partition[n]) for n in B.nodes()], edge_color='gray', font_size=8)
+    # plt.title("Red Bipartita con Comunidades")
+    plt.axis('off')
+    plt.tight_layout()
+    # plt.show()
+    # Guardar imagen
+    plt.savefig("red_bipartita_comunidades.png")
+
+    # Calcular modularidad
+    modularidad = community_louvain.modularity(partition, G)
+    print(f"Modularidad de la red bipartita: {modularidad:.4f}")
+
 
 if __name__ == "__main__":
     main()
