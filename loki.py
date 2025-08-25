@@ -53,6 +53,18 @@ def parseChemFile(file):
         reaction = parseReactionStr(cleanLine.split('|')[0].strip())
         if reaction not in reactions:
             reactions.append(reaction)
+        # Check if the reaction is reversible and add to the list of reactions
+        if reaction['backwardReaction']:
+            backwardeaction = {
+            'description': reaction['description']+' (backward)',
+            'lhsSpecies': reaction['rhsSpecies'],
+            'lhsStoichiometricCoeffs': reaction['rhsStoichiometricCoeffs'],
+            'rhsSpecies': reaction['lhsSpecies'],
+            'rhsStoichiometricCoeffs': reaction['lhsStoichiometricCoeffs'],
+            'backwardReaction': True
+            }
+            if backwardeaction not in reactions:
+                reactions.append(backwardeaction)
         # Extract species present in the reaction and add to the list
         for species in reaction['lhsSpecies']:
             if species not in uniqueSpecies:
