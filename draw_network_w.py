@@ -34,6 +34,15 @@ def construir_red_bipartita(uniqueSpecies, reactions):
 
     return B
 
+    Amat = nx.adjacency_matrix(B)
+    print(Amat.toarray())
+    plt.imshow(Amat.toarray(), cmap='Blues', interpolation='nearest', aspect='auto')
+    plt.title("Matriz de Adyacencia de la Red Bipartita") 
+    plt.show()  
+    return Amat
+
+
+
 def dibujar_red_bipartita(B, species_nodes, reaction_nodes, titulo="Red Bipartita", height=40):
     plt.figure(figsize=(18, height))
     pos = nx.bipartite_layout(B, species_nodes)
