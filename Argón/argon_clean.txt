@@ -1,0 +1,921 @@
+e Ar(1S0) <-> e Ar(3P2) e e
+e Ar(1S0) <-> e Ar(3P1) e e
+e Ar(1S0) <-> e Ar(3P0) e e
+e Ar(1S0) <-> e Ar(1P1) e e
+e Ar(1S0) <-> e Ar(4p[1/2]1) e e
+e Ar(1S0) <-> e Ar(4p[5/2]3) e e
+e Ar(1S0) <-> e Ar(4p[5/2]2) e e
+e Ar(1S0) <-> e Ar(4p[3/2]1) e e
+e Ar(1S0) <-> e Ar(4p[3/2]2) e e
+e Ar(1S0) <-> e Ar(4p[1/2]0) e e
+e Ar(1S0) <-> e Ar(4p'[3/2]1) e e
+e Ar(1S0) <-> e Ar(4p'[3/2]2) e e
+e Ar(1S0) <-> e Ar(4p'[1/2]1) e e
+e Ar(1S0) <-> e Ar(4p'[1/2]0) e e
+e Ar(1S0) <-> e Ar(5p[1/2]1) e e
+e Ar(1S0) <-> e Ar(5p[5/2]3) e e
+e Ar(1S0) <-> e Ar(5p[5/2]2) e e
+e Ar(1S0) <-> e Ar(5p[3/2]1) e e
+e Ar(1S0) <-> e Ar(5p[3/2]2) e e
+e Ar(1S0) <-> e Ar(5p[1/2]0) e e
+e Ar(1S0) <-> e Ar(5p'[3/2]1) e e
+e Ar(1S0) <-> e Ar(5p'[3/2]2) e e
+e Ar(1S0) <-> e Ar(5p'[1/2]1) e e
+e Ar(1S0) <-> e Ar(5p'[1/2]0) e e
+e Ar(1S0) <-> e Ar(4d) e e
+e Ar(1S0) <-> e Ar(6s) e e
+e Ar(1S0) <-> e Ar(4d') e e
+e Ar(3P2) <-> e Ar(3P1) e e
+e Ar(3P2) <-> e Ar(3P0) e e
+e Ar(3P2) <-> e Ar(1P1) e e
+e Ar(3P1) <-> e Ar(3P0) e e
+e Ar(3P1) <-> e Ar(1P1) e e
+e Ar(3P0) <-> e Ar(1P1) e e
+e Ar(3P2) <-> e Ar(4p[1/2]1) e e
+e Ar(3P2) <-> e Ar(4p[5/2]3) e e
+e Ar(3P2) <-> e Ar(4p[5/2]2) e e
+e Ar(3P2) <-> e Ar(4p[3/2]1) e e
+e Ar(3P2) <-> e Ar(4p[3/2]2) e e
+e Ar(3P2) <-> e Ar(4p'[3/2]1) e e
+e Ar(3P2) <-> e Ar(4p'[3/2]2) e e
+e Ar(3P2) <-> e Ar(4p'[1/2]1) e e
+e Ar(3P1) <-> e Ar(4p[1/2]1) e e
+e Ar(3P1) <-> e Ar(4p[5/2]2) e e
+e Ar(3P1) <-> e Ar(4p[3/2]1) e e
+e Ar(3P1) <-> e Ar(4p[3/2]2) e e
+e Ar(3P1) <-> e Ar(4p[1/2]0) e e
+e Ar(3P1) <-> e Ar(4p'[3/2]1) e e
+e Ar(3P1) <-> e Ar(4p'[3/2]2) e e
+e Ar(3P1) <-> e Ar(4p'[1/2]1) e e
+e Ar(3P1) <-> e Ar(4p'[1/2]0) e e
+e Ar(3P0) <-> e Ar(4p[1/2]1) e e
+e Ar(3P0) <-> e Ar(4p[3/2]1) e e
+e Ar(3P0) <-> e Ar(4p'[3/2]1) e e
+e Ar(3P0) <-> e Ar(4p'[1/2]1) e e
+e Ar(1P1) <-> e Ar(4p[1/2]1) e e
+e Ar(1P1) <-> e Ar(4p[5/2]2) e e
+e Ar(1P1) <-> e Ar(4p[3/2]1) e e
+e Ar(1P1) <-> e Ar(4p[3/2]2) e e
+e Ar(1P1) <-> e Ar(4p'[3/2]1) e e
+e Ar(1P1) <-> e Ar(4p'[3/2]2) e e
+e Ar(1P1) <-> e Ar(4p'[1/2]1) e e
+e Ar(1P1) <-> e Ar(4p'[1/2]0) e e
+e Ar(4p[1/2]1) <-> e Ar(4p[5/2]3) e e
+e Ar(4p[1/2]1) <-> e Ar(4p[5/2]2) e e
+e Ar(4p[1/2]1) <-> e Ar(4p[3/2]1) e e
+e Ar(4p[1/2]1) <-> e Ar(4p[3/2]2) e e
+e Ar(4p[1/2]1) <-> e Ar(4p[1/2]0) e e
+e Ar(4p[1/2]1) <-> e Ar(4p'[3/2]1) e e
+e Ar(4p[1/2]1) <-> e Ar(4p'[3/2]2) e e
+e Ar(4p[1/2]1) <-> e Ar(4p'[1/2]1) e e
+e Ar(4p[1/2]1) <-> e Ar(4p'[1/2]0) e e
+e Ar(4p[5/2]3) <-> e Ar(4p[5/2]2) e e
+e Ar(4p[5/2]3) <-> e Ar(4p[3/2]1) e e
+e Ar(4p[5/2]3) <-> e Ar(4p[3/2]2) e e
+e Ar(4p[5/2]3) <-> e Ar(4p[1/2]0) e e
+e Ar(4p[5/2]3) <-> e Ar(4p'[3/2]1) e e
+e Ar(4p[5/2]3) <-> e Ar(4p'[3/2]2) e e
+e Ar(4p[5/2]3) <-> e Ar(4p'[1/2]1) e e
+e Ar(4p[5/2]3) <-> e Ar(4p'[1/2]0) e e
+e Ar(4p[5/2]2) <-> e Ar(4p[3/2]1) e e
+e Ar(4p[5/2]2) <-> e Ar(4p[3/2]2) e e
+e Ar(4p[5/2]2) <-> e Ar(4p[1/2]0) e e
+e Ar(4p[5/2]2) <-> e Ar(4p'[3/2]1) e e
+e Ar(4p[5/2]2) <-> e Ar(4p'[3/2]2) e e
+e Ar(4p[5/2]2) <-> e Ar(4p'[1/2]1) e e
+e Ar(4p[5/2]2) <-> e Ar(4p'[1/2]0) e e
+e Ar(4p[3/2]1) <-> e Ar(4p[3/2]2) e e
+e Ar(4p[3/2]1) <-> e Ar(4p[1/2]0) e e
+e Ar(4p[3/2]1) <-> e Ar(4p'[3/2]1) e e
+e Ar(4p[3/2]1) <-> e Ar(4p'[3/2]2) e e
+e Ar(4p[3/2]1) <-> e Ar(4p'[1/2]1) e e
+e Ar(4p[3/2]1) <-> e Ar(4p'[1/2]0) e e
+e Ar(4p[3/2]2) <-> e Ar(4p[1/2]0) e e
+e Ar(4p[3/2]2) <-> e Ar(4p'[3/2]1) e e
+e Ar(4p[3/2]2) <-> e Ar(4p'[3/2]2) e e
+e Ar(4p[3/2]2) <-> e Ar(4p'[1/2]1) e e
+e Ar(4p[3/2]2) <-> e Ar(4p'[1/2]0) e e
+e Ar(4p[1/2]0) <-> e Ar(4p'[3/2]1) e e
+e Ar(4p[1/2]0) <-> e Ar(4p'[3/2]2) e e
+e Ar(4p[1/2]0) <-> e Ar(4p'[1/2]1) e e
+e Ar(4p[1/2]0) <-> e Ar(4p'[1/2]0) e e
+e Ar(4p'[3/2]1) <-> e Ar(4p'[3/2]2) e e
+e Ar(4p'[3/2]1) <-> e Ar(4p'[1/2]1) e e
+e Ar(4p'[3/2]1) <-> e Ar(4p'[1/2]0) e e
+e Ar(4p'[3/2]2) <-> e Ar(4p'[1/2]1) e e
+e Ar(4p'[3/2]2) <-> e Ar(4p'[1/2]0) e e
+e Ar(4p'[1/2]1) <-> e Ar(4p'[1/2]0) e e
+e Ar(5p[1/2]1) <-> e Ar(5p[5/2]3) e e
+e Ar(5p[1/2]1) <-> e Ar(5p[5/2]2) e e
+e Ar(5p[1/2]1) <-> e Ar(5p[3/2]1) e e
+e Ar(5p[1/2]1) <-> e Ar(5p[3/2]2) e e
+e Ar(5p[1/2]1) <-> e Ar(5p[1/2]0) e e
+e Ar(5p[1/2]1) <-> e Ar(5p'[3/2]1) e e
+e Ar(5p[1/2]1) <-> e Ar(5p'[3/2]2) e e
+e Ar(5p[1/2]1) <-> e Ar(5p'[1/2]1) e e
+e Ar(5p[1/2]1) <-> e Ar(5p'[1/2]0) e e
+e Ar(5p[5/2]3) <-> e Ar(5p[5/2]2) e e
+e Ar(5p[5/2]3) <-> e Ar(5p[3/2]1) e e
+e Ar(5p[5/2]3) <-> e Ar(5p[3/2]2) e e
+e Ar(5p[5/2]3) <-> e Ar(5p[1/2]0) e e
+e Ar(5p[5/2]3) <-> e Ar(5p'[3/2]1) e e
+e Ar(5p[5/2]3) <-> e Ar(5p'[3/2]2) e e
+e Ar(5p[5/2]3) <-> e Ar(5p'[1/2]1) e e
+e Ar(5p[5/2]3) <-> e Ar(5p'[1/2]0) e e
+e Ar(5p[5/2]2) <-> e Ar(5p[3/2]1) e e
+e Ar(5p[5/2]2) <-> e Ar(5p[3/2]2) e e
+e Ar(5p[5/2]2) <-> e Ar(5p[1/2]0) e e
+e Ar(5p[5/2]2) <-> e Ar(5p'[3/2]1) e e
+e Ar(5p[5/2]2) <-> e Ar(5p'[3/2]2) e e
+e Ar(5p[5/2]2) <-> e Ar(5p'[1/2]1) e e
+e Ar(5p[5/2]2) <-> e Ar(5p'[1/2]0) e e
+e Ar(5p[3/2]1) <-> e Ar(5p[3/2]2) e e
+e Ar(5p[3/2]1) <-> e Ar(5p[1/2]0) e e
+e Ar(5p[3/2]1) <-> e Ar(5p'[3/2]1) e e
+e Ar(5p[3/2]1) <-> e Ar(5p'[3/2]2) e e
+e Ar(5p[3/2]1) <-> e Ar(5p'[1/2]1) e e
+e Ar(5p[3/2]1) <-> e Ar(5p'[1/2]0) e e
+e Ar(5p[3/2]2) <-> e Ar(5p[1/2]0) e e
+e Ar(5p[3/2]2) <-> e Ar(5p'[3/2]1) e e
+e Ar(5p[3/2]2) <-> e Ar(5p'[3/2]2) e e
+e Ar(5p[3/2]2) <-> e Ar(5p'[1/2]1) e e
+e Ar(5p[3/2]2) <-> e Ar(5p'[1/2]0) e e
+e Ar(5p[1/2]0) <-> e Ar(5p'[3/2]1) e e
+e Ar(5p[1/2]0) <-> e Ar(5p'[3/2]2) e e
+e Ar(5p[1/2]0) <-> e Ar(5p'[1/2]1) e e
+e Ar(5p[1/2]0) <-> e Ar(5p'[1/2]0) e e
+e Ar(5p'[3/2]1) <-> e Ar(5p'[3/2]2) e e
+e Ar(5p'[3/2]1) <-> e Ar(5p'[1/2]1) e e
+e Ar(5p'[3/2]1) <-> e Ar(5p'[1/2]0) e e
+e Ar(5p'[3/2]2) <-> e Ar(5p'[1/2]1) e e
+e Ar(5p'[3/2]2) <-> e Ar(5p'[1/2]0) e e
+e Ar(5p'[1/2]1) <-> e Ar(5p'[1/2]0) e e
+e Ar(4p[1/2]1) <-> e Ar(3d+5s) e e
+e Ar(4p[5/2]3) <-> e Ar(3d+5s) e e
+e Ar(4p[5/2]2) <-> e Ar(3d+5s) e e
+e Ar(4p[3/2]1) <-> e Ar(3d+5s) e e
+e Ar(4p[3/2]2) <-> e Ar(3d+5s) e e
+e Ar(4p[1/2]0) <-> e Ar(3d+5s) e e
+e Ar(4p'[3/2]1) <-> e Ar(3d+5s) e e
+e Ar(4p'[3/2]2) <-> e Ar(3d+5s) e e
+e Ar(4p'[1/2]1) <-> e Ar(3d+5s) e e
+e Ar(4p'[1/2]0) <-> e Ar(3d+5s) e e
+e Ar(4p[1/2]1) <-> e Ar(3d'+5s') e e
+e Ar(4p[5/2]3) <-> e Ar(3d'+5s') e e
+e Ar(4p[5/2]2) <-> e Ar(3d'+5s') e e
+e Ar(4p[3/2]1) <-> e Ar(3d'+5s') e e
+e Ar(4p[3/2]2) <-> e Ar(3d'+5s') e e
+e Ar(4p[1/2]0) <-> e Ar(3d'+5s') e e
+e Ar(4p'[3/2]1) <-> e Ar(3d'+5s') e e
+e Ar(4p'[3/2]2) <-> e Ar(3d'+5s') e e
+e Ar(4p'[1/2]1) <-> e Ar(3d'+5s') e e
+e Ar(4p'[1/2]0) <-> e Ar(3d'+5s') e e
+e Ar(3P2) <-> e Ar(5p[1/2]1) e e
+e Ar(3P1) <-> e Ar(5p[1/2]1) e e
+e Ar(3P0) <-> e Ar(5p[1/2]1) e e
+e Ar(1P1) <-> e Ar(5p[1/2]1) e e
+e Ar(3d+5s) <-> e Ar(5p[1/2]1) e e
+e Ar(3d'+5s') <-> e Ar(5p[1/2]1) e e
+e Ar(3P2) <-> e Ar(5p[5/2]3) e e
+e Ar(3d+5s) <-> e Ar(5p[5/2]3) e e
+e Ar(3d'+5s') <-> e Ar(5p[5/2]3) e e
+e Ar(3P2) <-> e Ar(5p[5/2]2) e e
+e Ar(3P1) <-> e Ar(5p[5/2]2) e e
+e Ar(1P1) <-> e Ar(5p[5/2]2) e e
+e Ar(3d+5s) <-> e Ar(5p[5/2]2) e e
+e Ar(3d'+5s') <-> e Ar(5p[5/2]2) e e
+e Ar(3P2) <-> e Ar(5p[3/2]1) e e
+e Ar(3P1) <-> e Ar(5p[3/2]1) e e
+e Ar(3P0) <-> e Ar(5p[3/2]1) e e
+e Ar(1P1) <-> e Ar(5p[3/2]1) e e
+e Ar(3d+5s) <-> e Ar(5p[3/2]1) e e
+e Ar(3d'+5s') <-> e Ar(5p[3/2]1) e e
+e Ar(3P2) <-> e Ar(5p[3/2]2) e e
+e Ar(3P1) <-> e Ar(5p[3/2]2) e e
+e Ar(1P1) <-> e Ar(5p[3/2]2) e e
+e Ar(3d+5s) <-> e Ar(5p[3/2]2) e e
+e Ar(3d'+5s') <-> e Ar(5p[3/2]2) e e
+e Ar(3P1) <-> e Ar(5p[1/2]0) e e
+e Ar(1P1) <-> e Ar(5p[1/2]0) e e
+e Ar(3d+5s) <-> e Ar(5p[1/2]0) e e
+e Ar(3P1) <-> e Ar(5p'[3/2]1) e e
+e Ar(3P0) <-> e Ar(5p'[3/2]1) e e
+e Ar(1P1) <-> e Ar(5p'[3/2]1) e e
+e Ar(3d+5s) <-> e Ar(5p'[3/2]1) e e
+e Ar(3d'+5s') <-> e Ar(5p'[3/2]1) e e
+e Ar(3P2) <-> e Ar(5p'[3/2]2) e e
+e Ar(3P1) <-> e Ar(5p'[3/2]2) e e
+e Ar(3P0) <-> e Ar(5p'[3/2]2) e e
+e Ar(1P1) <-> e Ar(5p'[3/2]2) e e
+e Ar(3d+5s) <-> e Ar(5p'[3/2]2) e e
+e Ar(3d'+5s') <-> e Ar(5p'[3/2]2) e e
+e Ar(3P2) <-> e Ar(5p'[1/2]1) e e
+e Ar(3P1) <-> e Ar(5p'[1/2]1) e e
+e Ar(1P1) <-> e Ar(5p'[1/2]1) e e
+e Ar(3d+5s) <-> e Ar(5p'[1/2]1) e e
+e Ar(3d'+5s') <-> e Ar(5p'[1/2]1) e e
+e Ar(1P1) <-> e Ar(5p'[1/2]0) e e
+e Ar(3d+5s) <-> e Ar(5p'[1/2]0) e e
+e Ar(3d'+5s') <-> e Ar(5p'[1/2]0) e e
+e Ar(4p[1/2]1) <-> e Ar(4d) e e
+e Ar(4p[5/2]3) <-> e Ar(4d) e e
+e Ar(4p[5/2]2) <-> e Ar(4d) e e
+e Ar(4p[3/2]1) <-> e Ar(4d) e e
+e Ar(4p[3/2]2) <-> e Ar(4d) e e
+e Ar(4p[1/2]0) <-> e Ar(4d) e e
+e Ar(5p[1/2]1) <-> e Ar(4d) e e
+e Ar(5p[5/2]3) <-> e Ar(4d) e e
+e Ar(5p[5/2]2) <-> e Ar(4d) e e
+e Ar(5p[3/2]1) <-> e Ar(4d) e e
+e Ar(5p[3/2]2) <-> e Ar(4d) e e
+e Ar(5p[1/2]0) <-> e Ar(4d) e e
+e Ar(4p[1/2]1) <-> e Ar(6s) e e
+e Ar(4p[5/2]3) <-> e Ar(6s) e e
+e Ar(4p[5/2]2) <-> e Ar(6s) e e
+e Ar(4p[3/2]1) <-> e Ar(6s) e e
+e Ar(4p[3/2]2) <-> e Ar(6s) e e
+e Ar(4p[1/2]0) <-> e Ar(6s) e e
+e Ar(5p[1/2]1) <-> e Ar(6s) e e
+e Ar(5p[5/2]3) <-> e Ar(6s) e e
+e Ar(5p[5/2]2) <-> e Ar(6s) e e
+e Ar(5p[3/2]1) <-> e Ar(6s) e e
+e Ar(5p[3/2]2) <-> e Ar(6s) e e
+e Ar(5p[1/2]0) <-> e Ar(6s) e e
+e Ar(3d+5s) <-> e Ar(4f) e e
+e Ar(4d) <-> e Ar(4f) e e
+e Ar(4p'[3/2]1) <-> e Ar(4d') e e
+e Ar(4p'[3/2]2) <-> e Ar(4d') e e
+e Ar(4p'[1/2]1) <-> e Ar(4d') e e
+e Ar(4p'[1/2]0) <-> e Ar(4d') e e
+e Ar(5p'[3/2]1) <-> e Ar(4d') e e
+e Ar(5p'[3/2]2) <-> e Ar(4d') e e
+e Ar(5p'[1/2]1) <-> e Ar(4d') e e
+e Ar(5p'[1/2]0) <-> e Ar(4d') e e
+e Ar(3P2) <-> e Ar(3d+5s) e e
+e Ar(3P1) <-> e Ar(3d+5s) e e
+e Ar(3P0) <-> e Ar(3d'+5s') e e
+e Ar(1P1) <-> e Ar(3d'+5s') e e
+e Ar(3P2) <-> e Ar(4d) e e
+e Ar(3P1) <-> e Ar(4d) e e
+e Ar(3d+5s) <-> e Ar(4d) e e
+e Ar(3d+5s) <-> e Ar(6s) e e
+e Ar(4d) <-> e Ar(6s) e e
+e Ar(3P2) <-> e Ar(4f) e e
+e Ar(3P1) <-> e Ar(4f) e e
+e Ar(4p[1/2]1) <-> e Ar(4f) e e
+e Ar(4p[5/2]3) <-> e Ar(4f) e e
+e Ar(4p[5/2]2) <-> e Ar(4f) e e
+e Ar(4p[3/2]1) <-> e Ar(4f) e e
+e Ar(4p[3/2]2) <-> e Ar(4f) e e
+e Ar(4p[1/2]0) <-> e Ar(4f) e e
+e Ar(5p[1/2]1) <-> e Ar(4f) e e
+e Ar(5p[5/2]3) <-> e Ar(4f) e e
+e Ar(5p[5/2]2) <-> e Ar(4f) e e
+e Ar(5p[3/2]1) <-> e Ar(4f) e e
+e Ar(5p[3/2]2) <-> e Ar(4f) e e
+e Ar(5p[1/2]0) <-> e Ar(4f) e e
+e Ar(6s) <-> e Ar(4f) e e
+e Ar(3P0) <-> e Ar(4d') e e
+e Ar(1P1) <-> e Ar(4d') e e
+e Ar(3d'+5s') <-> e Ar(4d') e e
+e Ar(4p[1/2]1) <-> e Ar(5p[1/2]1) e e
+e Ar(4p[1/2]1) <-> e Ar(5p[5/2]3) e e
+e Ar(4p[1/2]1) <-> e Ar(5p[5/2]2) e e
+e Ar(4p[1/2]1) <-> e Ar(5p[3/2]1) e e
+e Ar(4p[1/2]1) <-> e Ar(5p[3/2]2) e e
+e Ar(4p[1/2]1) <-> e Ar(5p[1/2]0) e e
+e Ar(4p[5/2]3) <-> e Ar(5p[1/2]1) e e
+e Ar(4p[5/2]3) <-> e Ar(5p[5/2]3) e e
+e Ar(4p[5/2]3) <-> e Ar(5p[5/2]2) e e
+e Ar(4p[5/2]3) <-> e Ar(5p[3/2]1) e e
+e Ar(4p[5/2]3) <-> e Ar(5p[3/2]2) e e
+e Ar(4p[5/2]3) <-> e Ar(5p[1/2]0) e e
+e Ar(4p[5/2]2) <-> e Ar(5p[1/2]1) e e
+e Ar(4p[5/2]2) <-> e Ar(5p[5/2]3) e e
+e Ar(4p[5/2]2) <-> e Ar(5p[5/2]2) e e
+e Ar(4p[5/2]2) <-> e Ar(5p[3/2]1) e e
+e Ar(4p[5/2]2) <-> e Ar(5p[3/2]2) e e
+e Ar(4p[5/2]2) <-> e Ar(5p[1/2]0) e e
+e Ar(4p[3/2]1) <-> e Ar(5p[1/2]1) e e
+e Ar(4p[3/2]1) <-> e Ar(5p[5/2]3) e e
+e Ar(4p[3/2]1) <-> e Ar(5p[5/2]2) e e
+e Ar(4p[3/2]1) <-> e Ar(5p[3/2]1) e e
+e Ar(4p[3/2]1) <-> e Ar(5p[3/2]2) e e
+e Ar(4p[3/2]1) <-> e Ar(5p[1/2]0) e e
+e Ar(4p[3/2]2) <-> e Ar(5p[1/2]1) e e
+e Ar(4p[3/2]2) <-> e Ar(5p[5/2]3) e e
+e Ar(4p[3/2]2) <-> e Ar(5p[5/2]2) e e
+e Ar(4p[3/2]2) <-> e Ar(5p[3/2]1) e e
+e Ar(4p[3/2]2) <-> e Ar(5p[3/2]2) e e
+e Ar(4p[3/2]2) <-> e Ar(5p[1/2]0) e e
+e Ar(4p[1/2]0) <-> e Ar(5p[1/2]1) e e
+e Ar(4p[1/2]0) <-> e Ar(5p[5/2]3) e e
+e Ar(4p[1/2]0) <-> e Ar(5p[5/2]2) e e
+e Ar(4p[1/2]0) <-> e Ar(5p[3/2]1) e e
+e Ar(4p[1/2]0) <-> e Ar(5p[3/2]2) e e
+e Ar(4p[1/2]0) <-> e Ar(5p[1/2]0) e e
+e Ar(1S0) -> e e Ar(+,2P0) e e
+e Ar(3P2) -> e e Ar(+,2P0) e e
+e Ar(3P1) -> e e Ar(+,2P0) e e
+e Ar(3P0) -> e e Ar(+,2P0) e e
+e Ar(1P1) -> e e Ar(+,2P0) e e
+e Ar(4p[1/2]1) -> e e Ar(+,2P0) e e
+e Ar(4p[5/2]3) -> e e Ar(+,2P0) e e
+e Ar(4p[5/2]2) -> e e Ar(+,2P0) e e
+e Ar(4p[3/2]1) -> e e Ar(+,2P0) e e
+e Ar(4p[3/2]2) -> e e Ar(+,2P0) e e
+e Ar(4p[1/2]0) -> e e Ar(+,2P0) e e
+e Ar(4p'[3/2]1) -> e e Ar(+,2P0) e e
+e Ar(4p'[3/2]2) -> e e Ar(+,2P0) e e
+e Ar(4p'[1/2]1) -> e e Ar(+,2P0) e e
+e Ar(4p'[1/2]0) -> e e Ar(+,2P0) e e
+e Ar(3d+5s) -> e e Ar(+,2P0) e e
+e Ar(3d'+5s') -> e e Ar(+,2P0) e e
+e Ar(5p[1/2]1) -> e e Ar(+,2P0) e e
+e Ar(5p[5/2]3) -> e e Ar(+,2P0) e e
+e Ar(5p[5/2]2) -> e e Ar(+,2P0) e e
+e Ar(5p[3/2]1) -> e e Ar(+,2P0) e e
+e Ar(5p[3/2]2) -> e e Ar(+,2P0) e e
+e Ar(5p[1/2]0) -> e e Ar(+,2P0) e e
+e Ar(5p'[3/2]1) -> e e Ar(+,2P0) e e
+e Ar(5p'[3/2]2) -> e e Ar(+,2P0) e e
+e Ar(5p'[1/2]1) -> e e Ar(+,2P0) e e
+e Ar(5p'[1/2]0) -> e e Ar(+,2P0) e e
+e Ar(4d) -> e e Ar(+,2P0) e e
+e Ar(6s) -> e e Ar(+,2P0) e e
+e Ar(4f) -> e e Ar(+,2P0) e e
+e Ar(4d') -> e e Ar(+,2P0) e e
+e e -> e e e e e e
+e e -> e Ar(1S0) Ar(1S0) e e e e
+Ar(+,2P0) Ar(1S0) -> Ar(1S0) e e e e e
+e -> Ar(4p[1/2]1) Ar(1S0) e e e
+e -> Ar(4p[5/2]3) Ar(1S0) e e e
+e -> Ar(4p[5/2]2) Ar(1S0) e e e
+e -> Ar(4p[3/2]1) Ar(1S0) e e e
+e -> Ar(4p[3/2]2) Ar(1S0) e e e
+e -> Ar(4p[1/2]0) Ar(1S0) e e e
+e -> Ar(4p'[3/2]1) Ar(1S0) e e e
+e -> Ar(4p'[3/2]2) Ar(1S0) e e e
+e -> Ar(4p'[1/2]1) Ar(1S0) e e e
+e -> Ar(4p'[1/2]0) Ar(1S0) e e e
+Ar(3P2) Ar(3P2) -> Ar(1S0) Ar(+,2P0) e e e e e e
+Ar(3P2) Ar(3P1) -> Ar(1S0) Ar(+,2P0) e e e e e e
+Ar(3P2) Ar(3P0) -> Ar(1S0) Ar(+,2P0) e e e e e e
+Ar(3P2) Ar(1P1) -> Ar(1S0) Ar(+,2P0) e e e e e e
+Ar(3P1) Ar(3P1) -> Ar(1S0) Ar(+,2P0) e e e e e e
+Ar(3P1) Ar(3P0) -> Ar(1S0) Ar(+,2P0) e e e e e e
+Ar(3P1) Ar(1P1) -> Ar(1S0) Ar(+,2P0) e e e e e e
+Ar(3P0) Ar(3P0) -> Ar(1S0) Ar(+,2P0) e e e e e e
+Ar(3P0) Ar(1P1) -> Ar(1S0) Ar(+,2P0) e e e e e e
+Ar(1P1) Ar(1P1) -> Ar(1S0) Ar(+,2P0) e e e e e e
+Ar(4p[1/2]1) Ar(4p[1/2]1) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(4p[1/2]1) Ar(4p[5/2]3) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(4p[1/2]1) Ar(4p[5/2]2) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(4p[1/2]1) Ar(4p[3/2]1) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(4p[1/2]1) Ar(4p[3/2]2) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(4p[1/2]1) Ar(4p[1/2]0) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(4p[1/2]1) Ar(4p'[3/2]1) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(4p[1/2]1) Ar(4p'[3/2]2) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(4p[1/2]1) Ar(4p'[1/2]1) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(4p[1/2]1) Ar(4p'[1/2]0) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(4p[5/2]3) Ar(4p[5/2]3) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(4p[5/2]3) Ar(4p[5/2]2) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(4p[5/2]3) Ar(4p[3/2]1) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(4p[5/2]3) Ar(4p[3/2]2) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(4p[5/2]3) Ar(4p[1/2]0) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(4p[5/2]3) Ar(4p'[3/2]1) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(4p[5/2]3) Ar(4p'[3/2]2) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(4p[5/2]3) Ar(4p'[1/2]1) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(4p[5/2]3) Ar(4p'[1/2]0) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(4p[5/2]2) Ar(4p[5/2]2) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(4p[5/2]2) Ar(4p[3/2]1) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(4p[5/2]2) Ar(4p[3/2]2) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(4p[5/2]2) Ar(4p[1/2]0) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(4p[5/2]2) Ar(4p'[3/2]1) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(4p[5/2]2) Ar(4p'[3/2]2) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(4p[5/2]2) Ar(4p'[1/2]1) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(4p[5/2]2) Ar(4p'[1/2]0) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(4p[3/2]1) Ar(4p[3/2]1) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(4p[3/2]1) Ar(4p[3/2]2) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(4p[3/2]1) Ar(4p[1/2]0) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(4p[3/2]1) Ar(4p'[3/2]1) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(4p[3/2]1) Ar(4p'[3/2]2) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(4p[3/2]1) Ar(4p'[1/2]1) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(4p[3/2]1) Ar(4p'[1/2]0) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(4p[3/2]2) Ar(4p[3/2]2) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(4p[3/2]2) Ar(4p[1/2]0) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(4p[3/2]2) Ar(4p'[3/2]1) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(4p[3/2]2) Ar(4p'[3/2]2) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(4p[3/2]2) Ar(4p'[1/2]1) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(4p[3/2]2) Ar(4p'[1/2]0) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(4p[1/2]0) Ar(4p[1/2]0) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(4p[1/2]0) Ar(4p'[3/2]1) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(4p[1/2]0) Ar(4p'[3/2]2) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(4p[1/2]0) Ar(4p'[1/2]1) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(4p[1/2]0) Ar(4p'[1/2]0) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(4p'[3/2]1) Ar(4p'[3/2]1) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(4p'[3/2]1) Ar(4p'[3/2]2) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(4p'[3/2]1) Ar(4p'[1/2]1) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(4p'[3/2]1) Ar(4p'[1/2]0) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(4p'[3/2]2) Ar(4p'[3/2]2) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(4p'[3/2]2) Ar(4p'[1/2]1) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(4p'[3/2]2) Ar(4p'[1/2]0) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(4p'[1/2]1) Ar(4p'[1/2]1) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(4p'[1/2]1) Ar(4p'[1/2]0) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(4p'[1/2]0) Ar(4p'[1/2]0) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(3P2) Ar(4p[1/2]1) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(3P2) Ar(4p[5/2]3) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(3P2) Ar(4p[5/2]2) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(3P2) Ar(4p[3/2]1) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(3P2) Ar(4p[3/2]2) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(3P2) Ar(4p[1/2]0) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(3P2) Ar(4p'[3/2]1) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(3P2) Ar(4p'[3/2]2) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(3P2) Ar(4p'[1/2]1) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(3P2) Ar(4p'[1/2]0) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(3P1) Ar(4p[1/2]1) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(3P1) Ar(4p[5/2]3) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(3P1) Ar(4p[5/2]2) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(3P1) Ar(4p[3/2]1) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(3P1) Ar(4p[3/2]2) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(3P1) Ar(4p[1/2]0) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(3P1) Ar(4p'[3/2]1) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(3P1) Ar(4p'[3/2]2) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(3P1) Ar(4p'[1/2]1) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(3P1) Ar(4p'[1/2]0) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(3P0) Ar(4p[1/2]1) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(3P0) Ar(4p[5/2]3) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(3P0) Ar(4p[5/2]2) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(3P0) Ar(4p[3/2]1) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(3P0) Ar(4p[3/2]2) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(3P0) Ar(4p[1/2]0) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(3P0) Ar(4p'[3/2]1) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(3P0) Ar(4p'[3/2]2) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(3P0) Ar(4p'[1/2]1) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(3P0) Ar(4p'[1/2]0) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(1P1) Ar(4p[1/2]1) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(1P1) Ar(4p[5/2]3) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(1P1) Ar(4p[5/2]2) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(1P1) Ar(4p[3/2]1) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(1P1) Ar(4p[3/2]2) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(1P1) Ar(4p[1/2]0) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(1P1) Ar(4p'[3/2]1) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(1P1) Ar(4p'[3/2]2) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(1P1) Ar(4p'[1/2]1) -> e Ar(+,2P0) Ar(1S0) e e e e e
+Ar(1P1) Ar(4p'[1/2]0) -> e Ar(+,2P0) Ar(1S0) e e e e e
+e -> e Ar(1S0) e e e e e
+e Ar(3P2) -> e Ar(1S0) e e e e e
+e Ar(3P1) -> e Ar(1S0) e e e e e
+e Ar(3P0) -> e Ar(1S0) e e e e e
+e Ar(1P1) -> e Ar(1S0) e e e e e
+Ar(3P2) Ar(3P2) -> e e e e e e
+Ar(3P2) Ar(3P1) -> e e e e e e
+Ar(3P2) Ar(3P0) -> e e e e e e
+Ar(3P2) Ar(1P1) -> e e e e e e
+Ar(3P1) Ar(3P1) -> e e e e e e
+Ar(3P1) Ar(3P0) -> e e e e e e
+Ar(3P1) Ar(1P1) -> e e e e e e
+Ar(3P0) Ar(3P0) -> e e e e e e
+Ar(3P0) Ar(1P1) -> e e e e e e
+Ar(1P1) Ar(1P1) -> e e e e e e
+Ar(1S0) Ar(1S0) <-> Ar(1S0) Ar(3P1) e e
+Ar(1S0) Ar(1S0) <-> Ar(1S0) Ar(1P1) e e
+Ar(1S0) Ar(1S0) <-> Ar(1S0) Ar(3d+5s) e e e
+Ar(1S0) Ar(1S0) <-> Ar(1S0) Ar(3d'+5s') e e e
+Ar(1S0) Ar(1S0) <-> Ar(1S0) Ar(4d) e e e
+Ar(1S0) Ar(1S0) <-> Ar(1S0) Ar(6s) e e e
+Ar(1S0) Ar(1S0) <-> Ar(1S0) Ar(4f) e e e
+Ar(1S0) Ar(1S0) <-> Ar(1S0) Ar(4d') e e e
+Ar(1S0) Ar(1S0) <-> Ar(1S0) Ar(+,2P0) e e e e
+Ar(1S0) Ar(3P2) <-> Ar(1S0) Ar(3P1) e e
+Ar(1S0) Ar(3P2) <-> Ar(1S0) Ar(3P0) e e
+Ar(1S0) Ar(3P2) <-> Ar(1S0) Ar(1P1) e e
+Ar(1S0) Ar(3P2) <-> Ar(1S0) Ar(4p[1/2]1) e e e
+Ar(1S0) Ar(3P2) <-> Ar(1S0) Ar(4p[5/2]2) e e e
+Ar(1S0) Ar(3P2) <-> Ar(1S0) Ar(4p[3/2]1) e e e
+Ar(1S0) Ar(3P2) <-> Ar(1S0) Ar(4p'[3/2]2) e e e
+Ar(1S0) Ar(3P2) <-> Ar(1S0) Ar(4p'[1/2]0) e e e
+Ar(1S0) Ar(3P2) <-> Ar(1S0) Ar(3d+5s) e e e
+Ar(1S0) Ar(3P2) <-> Ar(1S0) Ar(3d'+5s') e e e
+Ar(1S0) Ar(3P2) <-> Ar(1S0) Ar(5p[1/2]1) e e e
+Ar(1S0) Ar(3P2) <-> Ar(1S0) Ar(5p[5/2]2) e e e
+Ar(1S0) Ar(3P2) <-> Ar(1S0) Ar(5p[3/2]1) e e e
+Ar(1S0) Ar(3P2) <-> Ar(1S0) Ar(5p'[3/2]2) e e e
+Ar(1S0) Ar(3P2) <-> Ar(1S0) Ar(5p'[1/2]0) e e e
+Ar(1S0) Ar(3P2) <-> Ar(1S0) Ar(4d) e e e
+Ar(1S0) Ar(3P2) <-> Ar(1S0) Ar(6s) e e e
+Ar(1S0) Ar(3P2) <-> Ar(1S0) Ar(4f) e e e
+Ar(1S0) Ar(3P2) <-> Ar(1S0) Ar(4d') e e e
+Ar(1S0) Ar(3P2) <-> Ar(1S0) Ar(+,2P0) e e e e
+Ar(1S0) Ar(3P1) <-> Ar(1S0) Ar(3P0) e e
+Ar(1S0) Ar(3P1) <-> Ar(1S0) Ar(1P1) e e
+Ar(1S0) Ar(3P1) <-> Ar(1S0) Ar(4p[1/2]1) e e e
+Ar(1S0) Ar(3P1) <-> Ar(1S0) Ar(4p[3/2]1) e e e
+Ar(1S0) Ar(3P1) <-> Ar(1S0) Ar(4p'[1/2]0) e e e
+Ar(1S0) Ar(3P1) <-> Ar(1S0) Ar(3d+5s) e e e
+Ar(1S0) Ar(3P1) <-> Ar(1S0) Ar(3d'+5s') e e e
+Ar(1S0) Ar(3P1) <-> Ar(1S0) Ar(5p[1/2]1) e e e
+Ar(1S0) Ar(3P1) <-> Ar(1S0) Ar(5p[3/2]1) e e e
+Ar(1S0) Ar(3P1) <-> Ar(1S0) Ar(5p'[1/2]0) e e e
+Ar(1S0) Ar(3P1) <-> Ar(1S0) Ar(4d) e e e
+Ar(1S0) Ar(3P1) <-> Ar(1S0) Ar(6s) e e e
+Ar(1S0) Ar(3P1) <-> Ar(1S0) Ar(4f) e e e
+Ar(1S0) Ar(3P1) <-> Ar(1S0) Ar(4d') e e e
+Ar(1S0) Ar(3P1) <-> Ar(1S0) Ar(+,2P0) e e e e
+Ar(1S0) Ar(3P0) <-> Ar(1S0) Ar(1P1) e e
+Ar(1S0) Ar(3P0) <-> Ar(1S0) Ar(3d+5s) e e e
+Ar(1S0) Ar(3P0) <-> Ar(1S0) Ar(3d'+5s') e e e
+Ar(1S0) Ar(3P0) <-> Ar(1S0) Ar(4d) e e e
+Ar(1S0) Ar(3P0) <-> Ar(1S0) Ar(6s) e e e
+Ar(1S0) Ar(3P0) <-> Ar(1S0) Ar(4f) e e e
+Ar(1S0) Ar(3P0) <-> Ar(1S0) Ar(4d') e e e
+Ar(1S0) Ar(3P0) <-> Ar(1S0) Ar(+,2P0) e e e e
+Ar(1S0) Ar(1P1) <-> Ar(1S0) Ar(4p[1/2]1) e e e
+Ar(1S0) Ar(1P1) <-> Ar(1S0) Ar(4p[3/2]1) e e e
+Ar(1S0) Ar(1P1) <-> Ar(1S0) Ar(4p'[1/2]0) e e e
+Ar(1S0) Ar(1P1) <-> Ar(1S0) Ar(3d+5s) e e e
+Ar(1S0) Ar(1P1) <-> Ar(1S0) Ar(3d'+5s') e e e
+Ar(1S0) Ar(1P1) <-> Ar(1S0) Ar(5p[1/2]1) e e e
+Ar(1S0) Ar(1P1) <-> Ar(1S0) Ar(5p[3/2]1) e e e
+Ar(1S0) Ar(1P1) <-> Ar(1S0) Ar(5p'[1/2]0) e e e
+Ar(1S0) Ar(1P1) <-> Ar(1S0) Ar(4d) e e e
+Ar(1S0) Ar(1P1) <-> Ar(1S0) Ar(6s) e e e
+Ar(1S0) Ar(1P1) <-> Ar(1S0) Ar(4f) e e e
+Ar(1S0) Ar(1P1) <-> Ar(1S0) Ar(4d') e e e
+Ar(1S0) Ar(1P1) <-> Ar(1S0) Ar(+,2P0) e e e e
+Ar(1S0) Ar(4p[1/2]1) <-> Ar(1S0) Ar(4p[1/2]0) e e e
+Ar(1S0) Ar(4p[1/2]1) <-> Ar(1S0) Ar(4p'[3/2]1) e e e
+Ar(1S0) Ar(4p[1/2]1) <-> Ar(1S0) Ar(4p'[1/2]1) e e e
+Ar(1S0) Ar(4p[1/2]1) <-> Ar(1S0) Ar(3d+5s) e e e
+Ar(1S0) Ar(4p[1/2]1) <-> Ar(1S0) Ar(3d'+5s') e e e
+Ar(1S0) Ar(4p[1/2]1) <-> Ar(1S0) Ar(5p[1/2]0) e e e
+Ar(1S0) Ar(4p[1/2]1) <-> Ar(1S0) Ar(5p'[3/2]1) e e e
+Ar(1S0) Ar(4p[1/2]1) <-> Ar(1S0) Ar(5p'[1/2]1) e e e
+Ar(1S0) Ar(4p[1/2]1) <-> Ar(1S0) Ar(4d) e e e
+Ar(1S0) Ar(4p[1/2]1) <-> Ar(1S0) Ar(6s) e e e
+Ar(1S0) Ar(4p[1/2]1) <-> Ar(1S0) Ar(4f) e e e
+Ar(1S0) Ar(4p[1/2]1) <-> Ar(1S0) Ar(4d') e e e
+Ar(1S0) Ar(4p[1/2]1) <-> Ar(1S0) Ar(+,2P0) e e e e
+Ar(1S0) Ar(4p[5/2]3) <-> Ar(1S0) Ar(4p[3/2]2) e e e
+Ar(1S0) Ar(4p[5/2]3) <-> Ar(1S0) Ar(4p'[3/2]1) e e e
+Ar(1S0) Ar(4p[5/2]3) <-> Ar(1S0) Ar(4p'[1/2]1) e e e
+Ar(1S0) Ar(4p[5/2]3) <-> Ar(1S0) Ar(3d+5s) e e e
+Ar(1S0) Ar(4p[5/2]3) <-> Ar(1S0) Ar(3d'+5s') e e e
+Ar(1S0) Ar(4p[5/2]3) <-> Ar(1S0) Ar(5p[3/2]2) e e e
+Ar(1S0) Ar(4p[5/2]3) <-> Ar(1S0) Ar(5p'[3/2]1) e e e
+Ar(1S0) Ar(4p[5/2]3) <-> Ar(1S0) Ar(5p'[1/2]1) e e e
+Ar(1S0) Ar(4p[5/2]3) <-> Ar(1S0) Ar(4d) e e e
+Ar(1S0) Ar(4p[5/2]3) <-> Ar(1S0) Ar(6s) e e e
+Ar(1S0) Ar(4p[5/2]3) <-> Ar(1S0) Ar(4f) e e e
+Ar(1S0) Ar(4p[5/2]3) <-> Ar(1S0) Ar(4d') e e e
+Ar(1S0) Ar(4p[5/2]3) <-> Ar(1S0) Ar(+,2P0) e e e e
+Ar(1S0) Ar(4p[5/2]2) <-> Ar(1S0) Ar(4p[3/2]2) e e e
+Ar(1S0) Ar(4p[5/2]2) <-> Ar(1S0) Ar(4p[1/2]0) e e e
+Ar(1S0) Ar(4p[5/2]2) <-> Ar(1S0) Ar(4p'[3/2]1) e e e
+Ar(1S0) Ar(4p[5/2]2) <-> Ar(1S0) Ar(4p'[1/2]1) e e e
+Ar(1S0) Ar(4p[5/2]2) <-> Ar(1S0) Ar(3d+5s) e e e
+Ar(1S0) Ar(4p[5/2]2) <-> Ar(1S0) Ar(3d'+5s') e e e
+Ar(1S0) Ar(4p[5/2]2) <-> Ar(1S0) Ar(5p[3/2]2) e e e
+Ar(1S0) Ar(4p[5/2]2) <-> Ar(1S0) Ar(5p[1/2]0) e e e
+Ar(1S0) Ar(4p[5/2]2) <-> Ar(1S0) Ar(5p'[3/2]1) e e e
+Ar(1S0) Ar(4p[5/2]2) <-> Ar(1S0) Ar(5p'[1/2]1) e e e
+Ar(1S0) Ar(4p[5/2]2) <-> Ar(1S0) Ar(4d) e e e
+Ar(1S0) Ar(4p[5/2]2) <-> Ar(1S0) Ar(6s) e e e
+Ar(1S0) Ar(4p[5/2]2) <-> Ar(1S0) Ar(4f) e e e
+Ar(1S0) Ar(4p[5/2]2) <-> Ar(1S0) Ar(4d') e e e
+Ar(1S0) Ar(4p[5/2]2) <-> Ar(1S0) Ar(+,2P0) e e e e
+Ar(1S0) Ar(4p[3/2]1) <-> Ar(1S0) Ar(4p[1/2]0) e e e
+Ar(1S0) Ar(4p[3/2]1) <-> Ar(1S0) Ar(4p'[3/2]1) e e e
+Ar(1S0) Ar(4p[3/2]1) <-> Ar(1S0) Ar(4p'[1/2]1) e e e
+Ar(1S0) Ar(4p[3/2]1) <-> Ar(1S0) Ar(3d+5s) e e e
+Ar(1S0) Ar(4p[3/2]1) <-> Ar(1S0) Ar(3d'+5s') e e e
+Ar(1S0) Ar(4p[3/2]1) <-> Ar(1S0) Ar(5p[1/2]0) e e e
+Ar(1S0) Ar(4p[3/2]1) <-> Ar(1S0) Ar(5p'[3/2]1) e e e
+Ar(1S0) Ar(4p[3/2]1) <-> Ar(1S0) Ar(5p'[1/2]1) e e e
+Ar(1S0) Ar(4p[3/2]1) <-> Ar(1S0) Ar(4d) e e e
+Ar(1S0) Ar(4p[3/2]1) <-> Ar(1S0) Ar(6s) e e e
+Ar(1S0) Ar(4p[3/2]1) <-> Ar(1S0) Ar(4f) e e e
+Ar(1S0) Ar(4p[3/2]1) <-> Ar(1S0) Ar(4d') e e e
+Ar(1S0) Ar(4p[3/2]1) <-> Ar(1S0) Ar(+,2P0) e e e e
+Ar(1S0) Ar(4p[3/2]2) <-> Ar(1S0) Ar(4p'[3/2]2) e e e
+Ar(1S0) Ar(4p[3/2]2) <-> Ar(1S0) Ar(4p'[1/2]0) e e e
+Ar(1S0) Ar(4p[3/2]2) <-> Ar(1S0) Ar(3d+5s) e e e
+Ar(1S0) Ar(4p[3/2]2) <-> Ar(1S0) Ar(3d'+5s') e e e
+Ar(1S0) Ar(4p[3/2]2) <-> Ar(1S0) Ar(5p[1/2]1) e e e
+Ar(1S0) Ar(4p[3/2]2) <-> Ar(1S0) Ar(5p[5/2]2) e e e
+Ar(1S0) Ar(4p[3/2]2) <-> Ar(1S0) Ar(5p[3/2]1) e e e
+Ar(1S0) Ar(4p[3/2]2) <-> Ar(1S0) Ar(5p'[3/2]2) e e e
+Ar(1S0) Ar(4p[3/2]2) <-> Ar(1S0) Ar(5p'[1/2]0) e e e
+Ar(1S0) Ar(4p[3/2]2) <-> Ar(1S0) Ar(4d) e e e
+Ar(1S0) Ar(4p[3/2]2) <-> Ar(1S0) Ar(6s) e e e
+Ar(1S0) Ar(4p[3/2]2) <-> Ar(1S0) Ar(4f) e e e
+Ar(1S0) Ar(4p[3/2]2) <-> Ar(1S0) Ar(4d') e e e
+Ar(1S0) Ar(4p[3/2]2) <-> Ar(1S0) Ar(+,2P0) e e e e
+Ar(1S0) Ar(4p[1/2]0) <-> Ar(1S0) Ar(3d+5s) e e e
+Ar(1S0) Ar(4p[1/2]0) <-> Ar(1S0) Ar(3d'+5s') e e e
+Ar(1S0) Ar(4p[1/2]0) <-> Ar(1S0) Ar(4d) e e e
+Ar(1S0) Ar(4p[1/2]0) <-> Ar(1S0) Ar(6s) e e e
+Ar(1S0) Ar(4p[1/2]0) <-> Ar(1S0) Ar(4f) e e e
+Ar(1S0) Ar(4p[1/2]0) <-> Ar(1S0) Ar(4d') e e e
+Ar(1S0) Ar(4p[1/2]0) <-> Ar(1S0) Ar(+,2P0) e e e e
+Ar(1S0) Ar(4p'[3/2]1) <-> Ar(1S0) Ar(4p'[1/2]0) e e e
+Ar(1S0) Ar(4p'[3/2]1) <-> Ar(1S0) Ar(3d+5s) e e e
+Ar(1S0) Ar(4p'[3/2]1) <-> Ar(1S0) Ar(3d'+5s') e e e
+Ar(1S0) Ar(4p'[3/2]1) <-> Ar(1S0) Ar(5p[1/2]1) e e e
+Ar(1S0) Ar(4p'[3/2]1) <-> Ar(1S0) Ar(5p[3/2]1) e e e
+Ar(1S0) Ar(4p'[3/2]1) <-> Ar(1S0) Ar(5p'[1/2]0) e e e
+Ar(1S0) Ar(4p'[3/2]1) <-> Ar(1S0) Ar(4d) e e e
+Ar(1S0) Ar(4p'[3/2]1) <-> Ar(1S0) Ar(6s) e e e
+Ar(1S0) Ar(4p'[3/2]1) <-> Ar(1S0) Ar(4f) e e e
+Ar(1S0) Ar(4p'[3/2]1) <-> Ar(1S0) Ar(4d') e e e
+Ar(1S0) Ar(4p'[3/2]1) <-> Ar(1S0) Ar(+,2P0) e e e e
+Ar(1S0) Ar(4p'[3/2]2) <-> Ar(1S0) Ar(4p'[1/2]1) e e e
+Ar(1S0) Ar(4p'[3/2]2) <-> Ar(1S0) Ar(3d+5s) e e e
+Ar(1S0) Ar(4p'[3/2]2) <-> Ar(1S0) Ar(3d'+5s') e e e
+Ar(1S0) Ar(4p'[3/2]2) <-> Ar(1S0) Ar(5p[3/2]2) e e e
+Ar(1S0) Ar(4p'[3/2]2) <-> Ar(1S0) Ar(5p[1/2]0) e e e
+Ar(1S0) Ar(4p'[3/2]2) <-> Ar(1S0) Ar(5p'[3/2]1) e e e
+Ar(1S0) Ar(4p'[3/2]2) <-> Ar(1S0) Ar(5p'[1/2]1) e e e
+Ar(1S0) Ar(4p'[3/2]2) <-> Ar(1S0) Ar(4d) e e e
+Ar(1S0) Ar(4p'[3/2]2) <-> Ar(1S0) Ar(6s) e e e
+Ar(1S0) Ar(4p'[3/2]2) <-> Ar(1S0) Ar(4f) e e e
+Ar(1S0) Ar(4p'[3/2]2) <-> Ar(1S0) Ar(4d') e e e
+Ar(1S0) Ar(4p'[3/2]2) <-> Ar(1S0) Ar(+,2P0) e e e e
+Ar(1S0) Ar(4p'[1/2]1) <-> Ar(1S0) Ar(4p'[1/2]0) e e e
+Ar(1S0) Ar(4p'[1/2]1) <-> Ar(1S0) Ar(3d+5s) e e e
+Ar(1S0) Ar(4p'[1/2]1) <-> Ar(1S0) Ar(3d'+5s') e e e
+Ar(1S0) Ar(4p'[1/2]1) <-> Ar(1S0) Ar(5p[1/2]1) e e e
+Ar(1S0) Ar(4p'[1/2]1) <-> Ar(1S0) Ar(5p[3/2]1) e e e
+Ar(1S0) Ar(4p'[1/2]1) <-> Ar(1S0) Ar(5p'[1/2]0) e e e
+Ar(1S0) Ar(4p'[1/2]1) <-> Ar(1S0) Ar(4d) e e e
+Ar(1S0) Ar(4p'[1/2]1) <-> Ar(1S0) Ar(6s) e e e
+Ar(1S0) Ar(4p'[1/2]1) <-> Ar(1S0) Ar(4f) e e e
+Ar(1S0) Ar(4p'[1/2]1) <-> Ar(1S0) Ar(4d') e e e
+Ar(1S0) Ar(4p'[1/2]1) <-> Ar(1S0) Ar(+,2P0) e e e e
+Ar(1S0) Ar(4p'[1/2]0) <-> Ar(1S0) Ar(3d+5s) e e e
+Ar(1S0) Ar(4p'[1/2]0) <-> Ar(1S0) Ar(3d'+5s') e e e
+Ar(1S0) Ar(4p'[1/2]0) <-> Ar(1S0) Ar(4d) e e e
+Ar(1S0) Ar(4p'[1/2]0) <-> Ar(1S0) Ar(6s) e e e
+Ar(1S0) Ar(4p'[1/2]0) <-> Ar(1S0) Ar(4f) e e e
+Ar(1S0) Ar(4p'[1/2]0) <-> Ar(1S0) Ar(4d') e e e
+Ar(1S0) Ar(4p'[1/2]0) <-> Ar(1S0) Ar(+,2P0) e e e e
+Ar(1S0) Ar(3d+5s) <-> Ar(1S0) Ar(3d'+5s') e e e
+Ar(1S0) Ar(3d+5s) <-> Ar(1S0) Ar(5p[1/2]1) e e e
+Ar(1S0) Ar(3d+5s) <-> Ar(1S0) Ar(5p[5/2]3) e e e
+Ar(1S0) Ar(3d+5s) <-> Ar(1S0) Ar(5p[5/2]2) e e e
+Ar(1S0) Ar(3d+5s) <-> Ar(1S0) Ar(5p[3/2]1) e e e
+Ar(1S0) Ar(3d+5s) <-> Ar(1S0) Ar(5p[3/2]2) e e e
+Ar(1S0) Ar(3d+5s) <-> Ar(1S0) Ar(5p[1/2]0) e e e
+Ar(1S0) Ar(3d+5s) <-> Ar(1S0) Ar(5p'[3/2]1) e e e
+Ar(1S0) Ar(3d+5s) <-> Ar(1S0) Ar(5p'[3/2]2) e e e
+Ar(1S0) Ar(3d+5s) <-> Ar(1S0) Ar(5p'[1/2]1) e e e
+Ar(1S0) Ar(3d+5s) <-> Ar(1S0) Ar(5p'[1/2]0) e e e
+Ar(1S0) Ar(3d+5s) <-> Ar(1S0) Ar(4d) e e e
+Ar(1S0) Ar(3d+5s) <-> Ar(1S0) Ar(6s) e e e
+Ar(1S0) Ar(3d+5s) <-> Ar(1S0) Ar(4f) e e e
+Ar(1S0) Ar(3d+5s) <-> Ar(1S0) Ar(4d') e e e
+Ar(1S0) Ar(3d+5s) <-> Ar(1S0) Ar(+,2P0) e e e e
+Ar(1S0) Ar(3d'+5s') <-> Ar(1S0) Ar(5p[1/2]1) e e e
+Ar(1S0) Ar(3d'+5s') <-> Ar(1S0) Ar(5p[5/2]3) e e e
+Ar(1S0) Ar(3d'+5s') <-> Ar(1S0) Ar(5p[5/2]2) e e e
+Ar(1S0) Ar(3d'+5s') <-> Ar(1S0) Ar(5p[3/2]1) e e e
+Ar(1S0) Ar(3d'+5s') <-> Ar(1S0) Ar(5p[3/2]2) e e e
+Ar(1S0) Ar(3d'+5s') <-> Ar(1S0) Ar(5p[1/2]0) e e e
+Ar(1S0) Ar(3d'+5s') <-> Ar(1S0) Ar(5p'[3/2]1) e e e
+Ar(1S0) Ar(3d'+5s') <-> Ar(1S0) Ar(5p'[3/2]2) e e e
+Ar(1S0) Ar(3d'+5s') <-> Ar(1S0) Ar(5p'[1/2]1) e e e
+Ar(1S0) Ar(3d'+5s') <-> Ar(1S0) Ar(5p'[1/2]0) e e e
+Ar(1S0) Ar(3d'+5s') <-> Ar(1S0) Ar(4d) e e e
+Ar(1S0) Ar(3d'+5s') <-> Ar(1S0) Ar(6s) e e e
+Ar(1S0) Ar(3d'+5s') <-> Ar(1S0) Ar(4f) e e e
+Ar(1S0) Ar(3d'+5s') <-> Ar(1S0) Ar(4d') e e e
+Ar(1S0) Ar(3d'+5s') <-> Ar(1S0) Ar(+,2P0) e e e e
+Ar(1S0) Ar(5p[1/2]1) <-> Ar(1S0) Ar(5p[1/2]0) e e e
+Ar(1S0) Ar(5p[1/2]1) <-> Ar(1S0) Ar(5p'[3/2]1) e e e
+Ar(1S0) Ar(5p[1/2]1) <-> Ar(1S0) Ar(5p'[1/2]1) e e e
+Ar(1S0) Ar(5p[1/2]1) <-> Ar(1S0) Ar(4d) e e e
+Ar(1S0) Ar(5p[1/2]1) <-> Ar(1S0) Ar(6s) e e e
+Ar(1S0) Ar(5p[1/2]1) <-> Ar(1S0) Ar(4f) e e e
+Ar(1S0) Ar(5p[1/2]1) <-> Ar(1S0) Ar(4d') e e e
+Ar(1S0) Ar(5p[1/2]1) <-> Ar(1S0) Ar(+,2P0) e e e e
+Ar(1S0) Ar(5p[5/2]3) <-> Ar(1S0) Ar(5p[3/2]2) e e e
+Ar(1S0) Ar(5p[5/2]3) <-> Ar(1S0) Ar(5p'[3/2]1) e e e
+Ar(1S0) Ar(5p[5/2]3) <-> Ar(1S0) Ar(5p'[1/2]1) e e e
+Ar(1S0) Ar(5p[5/2]3) <-> Ar(1S0) Ar(4d) e e e
+Ar(1S0) Ar(5p[5/2]3) <-> Ar(1S0) Ar(6s) e e e
+Ar(1S0) Ar(5p[5/2]3) <-> Ar(1S0) Ar(4f) e e e
+Ar(1S0) Ar(5p[5/2]3) <-> Ar(1S0) Ar(4d') e e e
+Ar(1S0) Ar(5p[5/2]3) <-> Ar(1S0) Ar(+,2P0) e e e e
+Ar(1S0) Ar(5p[5/2]2) <-> Ar(1S0) Ar(5p[3/2]2) e e e
+Ar(1S0) Ar(5p[5/2]2) <-> Ar(1S0) Ar(5p[1/2]0) e e e
+Ar(1S0) Ar(5p[5/2]2) <-> Ar(1S0) Ar(5p'[3/2]1) e e e
+Ar(1S0) Ar(5p[5/2]2) <-> Ar(1S0) Ar(5p'[1/2]1) e e e
+Ar(1S0) Ar(5p[5/2]2) <-> Ar(1S0) Ar(4d) e e e
+Ar(1S0) Ar(5p[5/2]2) <-> Ar(1S0) Ar(6s) e e e
+Ar(1S0) Ar(5p[5/2]2) <-> Ar(1S0) Ar(4f) e e e
+Ar(1S0) Ar(5p[5/2]2) <-> Ar(1S0) Ar(4d') e e e
+Ar(1S0) Ar(5p[5/2]2) <-> Ar(1S0) Ar(+,2P0) e e e e
+Ar(1S0) Ar(5p[3/2]1) <-> Ar(1S0) Ar(5p[1/2]0) e e e
+Ar(1S0) Ar(5p[3/2]1) <-> Ar(1S0) Ar(5p'[3/2]1) e e e
+Ar(1S0) Ar(5p[3/2]1) <-> Ar(1S0) Ar(5p'[1/2]1) e e e
+Ar(1S0) Ar(5p[3/2]1) <-> Ar(1S0) Ar(4d) e e e
+Ar(1S0) Ar(5p[3/2]1) <-> Ar(1S0) Ar(6s) e e e
+Ar(1S0) Ar(5p[3/2]1) <-> Ar(1S0) Ar(4f) e e e
+Ar(1S0) Ar(5p[3/2]1) <-> Ar(1S0) Ar(4d') e e e
+Ar(1S0) Ar(5p[3/2]1) <-> Ar(1S0) Ar(+,2P0) e e e e
+Ar(1S0) Ar(5p[3/2]2) <-> Ar(1S0) Ar(5p'[3/2]2) e e e
+Ar(1S0) Ar(5p[3/2]2) <-> Ar(1S0) Ar(5p'[1/2]0) e e e
+Ar(1S0) Ar(5p[3/2]2) <-> Ar(1S0) Ar(4d) e e e
+Ar(1S0) Ar(5p[3/2]2) <-> Ar(1S0) Ar(6s) e e e
+Ar(1S0) Ar(5p[3/2]2) <-> Ar(1S0) Ar(4f) e e e
+Ar(1S0) Ar(5p[3/2]2) <-> Ar(1S0) Ar(4d') e e e
+Ar(1S0) Ar(5p[3/2]2) <-> Ar(1S0) Ar(+,2P0) e e e e
+Ar(1S0) Ar(5p[1/2]0) <-> Ar(1S0) Ar(4d) e e e
+Ar(1S0) Ar(5p[1/2]0) <-> Ar(1S0) Ar(6s) e e e
+Ar(1S0) Ar(5p[1/2]0) <-> Ar(1S0) Ar(4f) e e e
+Ar(1S0) Ar(5p[1/2]0) <-> Ar(1S0) Ar(4d') e e e
+Ar(1S0) Ar(5p[1/2]0) <-> Ar(1S0) Ar(+,2P0) e e e e
+Ar(1S0) Ar(5p'[3/2]1) <-> Ar(1S0) Ar(5p'[1/2]0) e e e
+Ar(1S0) Ar(5p'[3/2]1) <-> Ar(1S0) Ar(4d) e e e
+Ar(1S0) Ar(5p'[3/2]1) <-> Ar(1S0) Ar(6s) e e e
+Ar(1S0) Ar(5p'[3/2]1) <-> Ar(1S0) Ar(4f) e e e
+Ar(1S0) Ar(5p'[3/2]1) <-> Ar(1S0) Ar(4d') e e e
+Ar(1S0) Ar(5p'[3/2]1) <-> Ar(1S0) Ar(+,2P0) e e e e
+Ar(1S0) Ar(5p'[3/2]2) <-> Ar(1S0) Ar(5p'[1/2]1) e e e
+Ar(1S0) Ar(5p'[3/2]2) <-> Ar(1S0) Ar(4d) e e e
+Ar(1S0) Ar(5p'[3/2]2) <-> Ar(1S0) Ar(6s) e e e
+Ar(1S0) Ar(5p'[3/2]2) <-> Ar(1S0) Ar(4f) e e e
+Ar(1S0) Ar(5p'[3/2]2) <-> Ar(1S0) Ar(4d') e e e
+Ar(1S0) Ar(5p'[3/2]2) <-> Ar(1S0) Ar(+,2P0) e e e e
+Ar(1S0) Ar(5p'[1/2]1) <-> Ar(1S0) Ar(5p'[1/2]0) e e e
+Ar(1S0) Ar(5p'[1/2]1) <-> Ar(1S0) Ar(4d) e e e
+Ar(1S0) Ar(5p'[1/2]1) <-> Ar(1S0) Ar(6s) e e e
+Ar(1S0) Ar(5p'[1/2]1) <-> Ar(1S0) Ar(4f) e e e
+Ar(1S0) Ar(5p'[1/2]1) <-> Ar(1S0) Ar(4d') e e e
+Ar(1S0) Ar(5p'[1/2]1) <-> Ar(1S0) Ar(+,2P0) e e e e
+Ar(1S0) Ar(5p'[1/2]0) <-> Ar(1S0) Ar(4d) e e e
+Ar(1S0) Ar(5p'[1/2]0) <-> Ar(1S0) Ar(6s) e e e
+Ar(1S0) Ar(5p'[1/2]0) <-> Ar(1S0) Ar(4f) e e e
+Ar(1S0) Ar(5p'[1/2]0) <-> Ar(1S0) Ar(4d') e e e
+Ar(1S0) Ar(5p'[1/2]0) <-> Ar(1S0) Ar(+,2P0) e e e e
+Ar(1S0) Ar(4d) <-> Ar(1S0) Ar(6s) e e e
+Ar(1S0) Ar(4d) <-> Ar(1S0) Ar(4f) e e e
+Ar(1S0) Ar(4d) <-> Ar(1S0) Ar(4d') e e e
+Ar(1S0) Ar(4d) <-> Ar(1S0) Ar(+,2P0) e e e e
+Ar(1S0) Ar(6s) <-> Ar(1S0) Ar(4f) e e e
+Ar(1S0) Ar(6s) <-> Ar(1S0) Ar(4d') e e e
+Ar(1S0) Ar(6s) <-> Ar(1S0) Ar(+,2P0) e e e e
+Ar(1S0) Ar(4f) <-> Ar(1S0) Ar(4d') e e e
+Ar(1S0) Ar(4f) <-> Ar(1S0) Ar(+,2P0) e e e e
+Ar(1S0) Ar(4d') <-> Ar(1S0) Ar(+,2P0) e e e e
+Ar(1S0) -> Ar(+,2P0) Ar(1S0) e e e
+e e Ar(+,2P0) -> e Ar(3P2) e e e e e e e
+e e Ar(+,2P0) -> e Ar(3P1) e e e e e e e
+e e Ar(+,2P0) -> e Ar(3P0) e e e e e e e
+e e Ar(+,2P0) -> e Ar(1P1) e e e e e e e
+e e Ar(+,2P0) -> e Ar(4p[1/2]1) e e e e e e e
+e e Ar(+,2P0) -> e Ar(4p[5/2]3) e e e e e e e
+e e Ar(+,2P0) -> e Ar(4p[5/2]2) e e e e e e e
+e e Ar(+,2P0) -> e Ar(4p[3/2]1) e e e e e e e
+e e Ar(+,2P0) -> e Ar(4p[3/2]2) e e e e e e e
+e e Ar(+,2P0) -> e Ar(4p[1/2]0) e e e e e e e
+e e Ar(+,2P0) -> e Ar(4p'[3/2]1) e e e e e e e
+e e Ar(+,2P0) -> e Ar(4p'[3/2]2) e e e e e e e
+e e Ar(+,2P0) -> e Ar(4p'[1/2]1) e e e e e e e
+e e Ar(+,2P0) -> e Ar(4p'[1/2]0) e e e e e e e
+Ar(+,2P0) Ar(1S0) e -> Ar(1S0) e e e e e e
+Ar(3P2) Ar(1S0) -> e Ar(1S0) e e e e
+Ar(3P1) Ar(1S0) -> e Ar(1S0) e e e e
+Ar(3P0) Ar(1S0) -> e Ar(1S0) e e e e
+Ar(1P1) Ar(1S0) -> e Ar(1S0) e e e e
+Ar(4p[1/2]1) Ar(1S0) -> e e Ar(1S0) e e e e
+Ar(4p[5/2]3) Ar(1S0) -> e e Ar(1S0) e e e e
+Ar(4p[5/2]2) Ar(1S0) -> e e Ar(1S0) e e e e
+Ar(4p[3/2]1) Ar(1S0) -> e e Ar(1S0) e e e e
+Ar(4p[3/2]2) Ar(1S0) -> e e Ar(1S0) e e e e
+Ar(4p[1/2]0) Ar(1S0) -> e e Ar(1S0) e e e e
+Ar(4p'[3/2]1) Ar(1S0) -> e e Ar(1S0) e e e e
+Ar(4p'[3/2]2) Ar(1S0) -> e e Ar(1S0) e e e e
+Ar(4p'[1/2]1) Ar(1S0) -> e e Ar(1S0) e e e e
+Ar(4p'[1/2]0) Ar(1S0) -> e e Ar(1S0) e e e e
+e e -> e e e e e e e
+e e e -> e e e e e e
+Ar(3P1) -> Ar(1S0) e e e
+Ar(1P1) -> Ar(1S0) e e e
+Ar(3d+5s) -> Ar(1S0) e e e
+Ar(3d'+5s') -> Ar(1S0) e e e
+Ar(4p[1/2]1) -> Ar(3P2) e e
+Ar(4p[5/2]3) -> Ar(3P2) e e
+Ar(4p[5/2]2) -> Ar(3P2) e e
+Ar(4p[3/2]1) -> Ar(3P2) e e
+Ar(4p[3/2]2) -> Ar(3P2) e e
+Ar(4p'[3/2]1) -> Ar(3P2) e e
+Ar(4p'[3/2]2) -> Ar(3P2) e e
+Ar(4p'[1/2]1) -> Ar(3P2) e e
+Ar(5p[1/2]1) -> Ar(3P2) e e
+Ar(5p[5/2]3) -> Ar(3P2) e e
+Ar(5p[5/2]2) -> Ar(3P2) e e
+Ar(5p[3/2]1) -> Ar(3P2) e e
+Ar(5p[3/2]2) -> Ar(3P2) e e
+Ar(5p'[3/2]2) -> Ar(3P2) e e
+Ar(5p'[1/2]1) -> Ar(3P2) e e
+Ar(4p[1/2]1) -> Ar(3P1) e e
+Ar(4p[5/2]2) -> Ar(3P1) e e
+Ar(4p[3/2]1) -> Ar(3P1) e e
+Ar(4p[3/2]2) -> Ar(3P1) e e
+Ar(4p[1/2]0) -> Ar(3P1) e e
+Ar(4p'[3/2]1) -> Ar(3P1) e e
+Ar(4p'[3/2]2) -> Ar(3P1) e e
+Ar(4p'[1/2]1) -> Ar(3P1) e e
+Ar(4p'[1/2]0) -> Ar(3P1) e e
+Ar(5p[1/2]1) -> Ar(3P1) e e
+Ar(5p[5/2]2) -> Ar(3P1) e e
+Ar(5p[3/2]1) -> Ar(3P1) e e
+Ar(5p[3/2]2) -> Ar(3P1) e e
+Ar(5p[1/2]0) -> Ar(3P1) e e
+Ar(5p'[3/2]1) -> Ar(3P1) e e
+Ar(5p'[3/2]2) -> Ar(3P1) e e
+Ar(5p'[1/2]1) -> Ar(3P1) e e
+Ar(4p[1/2]1) -> Ar(3P0) e e
+Ar(4p[3/2]1) -> Ar(3P0) e e
+Ar(4p'[3/2]1) -> Ar(3P0) e e
+Ar(4p'[1/2]1) -> Ar(3P0) e e
+Ar(5p[1/2]1) -> Ar(3P0) e e
+Ar(5p[3/2]1) -> Ar(3P0) e e
+Ar(5p'[3/2]1) -> Ar(3P0) e e
+Ar(5p'[3/2]2) -> Ar(3P0) e e
+Ar(4p[1/2]1) -> Ar(1P1) e e
+Ar(4p[5/2]2) -> Ar(1P1) e e
+Ar(4p[3/2]1) -> Ar(1P1) e e
+Ar(4p[3/2]2) -> Ar(1P1) e e
+Ar(4p'[3/2]1) -> Ar(1P1) e e
+Ar(4p'[3/2]2) -> Ar(1P1) e e
+Ar(4p'[1/2]1) -> Ar(1P1) e e
+Ar(4p'[1/2]0) -> Ar(1P1) e e
+Ar(5p[1/2]1) -> Ar(1P1) e e
+Ar(5p[5/2]2) -> Ar(1P1) e e
+Ar(5p[3/2]1) -> Ar(1P1) e e
+Ar(5p[3/2]2) -> Ar(1P1) e e
+Ar(5p[1/2]0) -> Ar(1P1) e e
+Ar(5p'[3/2]1) -> Ar(1P1) e e
+Ar(5p'[3/2]2) -> Ar(1P1) e e
+Ar(5p'[1/2]1) -> Ar(1P1) e e
+Ar(5p'[1/2]0) -> Ar(1P1) e e
+Ar(3d+5s) -> Ar(4p[1/2]1) e e
+Ar(3d'+5s') -> Ar(4p[1/2]1) e e
+Ar(4d) -> Ar(4p[1/2]1) e e
+Ar(6s) -> Ar(4p[1/2]1) e e
+Ar(4d') -> Ar(4p[1/2]1) e e
+Ar(3d+5s) -> Ar(4p[5/2]3) e e
+Ar(4d) -> Ar(4p[5/2]3) e e
+Ar(6s) -> Ar(4p[5/2]3) e e
+Ar(4d') -> Ar(4p[5/2]3) e e
+Ar(3d+5s) -> Ar(4p[5/2]2) e e
+Ar(3d'+5s') -> Ar(4p[5/2]2) e e
+Ar(4d) -> Ar(4p[5/2]2) e e
+Ar(6s) -> Ar(4p[5/2]2) e e
+Ar(4d') -> Ar(4p[5/2]2) e e
+Ar(3d+5s) -> Ar(4p[3/2]1) e e
+Ar(3d'+5s') -> Ar(4p[3/2]1) e e
+Ar(4d) -> Ar(4p[3/2]1) e e
+Ar(6s) -> Ar(4p[3/2]1) e e
+Ar(4d') -> Ar(4p[3/2]1) e e
+Ar(3d+5s) -> Ar(4p[3/2]2) e e
+Ar(3d'+5s') -> Ar(4p[3/2]2) e e
+Ar(4d) -> Ar(4p[3/2]2) e e
+Ar(6s) -> Ar(4p[3/2]2) e e
+Ar(4d') -> Ar(4p[3/2]2) e e
+Ar(3d+5s) -> Ar(4p[1/2]0) e e
+Ar(3d'+5s') -> Ar(4p[1/2]0) e e
+Ar(4d) -> Ar(4p[1/2]0) e e
+Ar(6s) -> Ar(4p[1/2]0) e e
+Ar(4d') -> Ar(4p[1/2]0) e e
+Ar(3d+5s) -> Ar(4p'[3/2]1) e e
+Ar(3d'+5s') -> Ar(4p'[3/2]1) e e
+Ar(4d) -> Ar(4p'[3/2]1) e e
+Ar(6s) -> Ar(4p'[3/2]1) e e
+Ar(4d') -> Ar(4p'[3/2]1) e e
+Ar(3d+5s) -> Ar(4p'[3/2]2) e e
+Ar(3d'+5s') -> Ar(4p'[3/2]2) e e
+Ar(4d) -> Ar(4p'[3/2]2) e e
+Ar(6s) -> Ar(4p'[3/2]2) e e
+Ar(4d') -> Ar(4p'[3/2]2) e e
+Ar(3d+5s) -> Ar(4p'[1/2]1) e e
+Ar(3d'+5s') -> Ar(4p'[1/2]1) e e
+Ar(4d) -> Ar(4p'[1/2]1) e e
+Ar(6s) -> Ar(4p'[1/2]1) e e
+Ar(4d') -> Ar(4p'[1/2]1) e e
+Ar(3d+5s) -> Ar(4p'[1/2]0) e e
+Ar(3d'+5s') -> Ar(4p'[1/2]0) e e
+Ar(6s) -> Ar(4p'[1/2]0) e e
+Ar(5p[5/2]3) -> Ar(3d+5s) e e
+Ar(5p'[3/2]2) -> Ar(3d+5s) e e
+Ar(4d) -> Ar(3d+5s) e e
+Ar(4f) -> Ar(3d+5s) e e
+Ar(4f) -> Ar(3d'+5s') e e
+e -> Ar(1S0) e e e e
+e -> e Ar(1S0) Ar(+,2P0) e e e
+Ar(+,2P0) -> Ar(1S0) e e e e
+-> Ar(1S0) e e e e
+Ar(3P2) -> Ar(1S0)
+Ar(3P0) -> Ar(1S0)
