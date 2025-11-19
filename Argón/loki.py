@@ -1,9 +1,14 @@
 import re
+import os
 
 def main(file):
 
+    # Always convert the requested file path to an absolute path.
+    # If `file` is relative, interpret it relative to this script's directory.
+    base = os.path.dirname(os.path.abspath(__file__))
+    file = os.path.abspath(os.path.join(base, file))
+
     # Parse the chemical file and extract unique species and reactions
-    # The file should be in the same directory as this script
     uniqueSpecies, reactions = parseChemFile(file)
 
     # Print the unique species and reactions
@@ -133,4 +138,4 @@ def parseSpeciesStr(str):
     return speciesList, stoichiometricCoeffList
 
 if __name__ == "__main__":
-    main("helium.chem")
+    main("argon.chem")
