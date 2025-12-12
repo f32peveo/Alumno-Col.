@@ -15,7 +15,7 @@ def cargar_energias(path="databaseStateEnergyHe.txt"):
     return energy_dict
 
 def main(file):
-    base = os.path.dirname(os.path.abspath(__file__))   # carpeta donde está binary.py
+    base = os.path.dirname(os.path.abspath(__file__))
     file = os.path.abspath(os.path.join(base, file))
 
     uniqueSpecies, reactions = lk.parseChemFile(file)
@@ -35,25 +35,26 @@ def main(file):
         reactantsMatrix.append(list(reactantsRow.values()))
         productsMatrix.append(list(productsRow.values()))
 
-    np.save('reactantsMatrix.npy', reactantsMatrix)
-    np.save('productsMatrix.npy', productsMatrix)
+    here = os.path.dirname(os.path.abspath(__file__))
+    np.save(os.path.join(here, "reactantsMatrix.npy"), reactantsMatrix)
+    np.save(os.path.join(here, "productsMatrix.npy"), productsMatrix)
 
     reactantsDegree = [sum(col) for col in zip(*reactantsMatrix)]
     productsDegree = [sum(col) for col in zip(*productsMatrix)]
 
-    np.save('reactantsDegree.npy', reactantsDegree)
-    np.save('productsDegree.npy', productsDegree)
+    np.save(os.path.join(here, "reactantsDegree.npy"), reactantsDegree)
+    np.save(os.path.join(here, "productsDegree.npy"), productsDegree)
 
     # Ordenar por energía
     energy_dict = cargar_energias()
     ordered_species = [s for s, _ in sorted(energy_dict.items(), key=lambda x: x[1]) if s in uniqueSpecies]
-    np.save('ordered_species.npy', np.array(ordered_species))
+    np.save(os.path.join(here, "ordered_species.npy"), np.array(ordered_species))
 
     # Reordenar los grados
     reactantsDegree_sorted = [reactantsDegree[uniqueSpecies.index(s)] for s in ordered_species]
     productsDegree_sorted = [productsDegree[uniqueSpecies.index(s)] for s in ordered_species]
-    np.save(r"C:\Users\isafe\OneDrive\Desktop\Escritorio\FÍSICA\TFG\TFG\reactantsDegree_sorted.npy", np.array(reactantsDegree_sorted))
-    np.save(r"C:\Users\isafe\OneDrive\Desktop\Escritorio\FÍSICA\TFG\TFG\rproductsDegree_sorted.npy", np.array(productsDegree_sorted))
+    np.save(os.path.join(here, "reactantsDegree_sorted.npy"), np.array(reactantsDegree_sorted))
+    np.save(os.path.join(here, "productsDegree_sorted.npy"), np.array(productsDegree_sorted))
 
     # Gráficas
     mostrar_matriz_binaria(reactantsMatrix, ordered_species, "Matriz binaria de Reactivos")
