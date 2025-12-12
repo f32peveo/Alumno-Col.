@@ -1,6 +1,7 @@
 import loki as lk
 import matplotlib.pyplot as plt
 import numpy as np
+import os
 
 def cargar_energias(path="databaseStateEnergyHe.txt"):
     energy_dict = {}
@@ -14,6 +15,9 @@ def cargar_energias(path="databaseStateEnergyHe.txt"):
     return energy_dict
 
 def main(file):
+    base = os.path.dirname(os.path.abspath(__file__))   # carpeta donde está binary.py
+    file = os.path.abspath(os.path.join(base, file))
+
     uniqueSpecies, reactions = lk.parseChemFile(file)
 
     reactantsMatrix = []
@@ -94,4 +98,4 @@ def mostrar_matriz_binaria(matriz, speciesList, titulo):
     plt.close()
 
 if __name__ == "__main__":
-    main('helium.chem')
+    main("argon.chem")
