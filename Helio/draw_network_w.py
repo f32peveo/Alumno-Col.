@@ -1,3 +1,4 @@
+import os
 import numpy as np
 import networkx as nx
 import matplotlib.pyplot as plt
@@ -6,6 +7,8 @@ import community as community_louvain
 
 # Cargar energías y ordenar especies
 def cargar_energias(path="databaseStateEnergyHe.txt"):
+    base = os.path.dirname(os.path.abspath(__file__))
+    path = os.path.abspath(os.path.join(base, path))
     energy_dict = {}
     with open(path, "r") as f:
         for linea in f:

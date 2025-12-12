@@ -5,7 +5,7 @@ from matplotlib import transforms
 
 
 def load_energies():
-    path = os.path.join(os.path.dirname(__file__), "databaseStateEnergyHe (1).txt")
+    path = os.path.join(os.path.dirname(__file__), "databaseStateEnergyHe.txt")
     energy_dict = {}
     with open(path, 'r') as file:
         for line in file:
@@ -122,7 +122,7 @@ if __name__ == "__main__":
     # Cargar arrays alineados y ordenados
     ordered_species = np.load(os.path.join(base_path, "ordered_species.npy"), allow_pickle=True)
     reactantsDegree_sorted = np.load(os.path.join(base_path, "reactantsDegree_sorted.npy"))
-    productsDegree_sorted = np.load(os.path.join(base_path, "rproductsDegree_sorted.npy"))
+    productsDegree_sorted = np.load(os.path.join(base_path, "productsDegree_sorted.npy"))
 
     # Cargar energías desde archivo local
     energies = load_energies()

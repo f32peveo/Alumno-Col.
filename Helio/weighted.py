@@ -1,8 +1,12 @@
 import loki as lk
 import matplotlib.pyplot as plt
 import numpy as np
+import os
 
 def cargar_energias(path="databaseStateEnergyHe.txt"):
+    base = os.path.dirname(os.path.abspath(__file__))
+    path = os.path.abspath(os.path.join(base, path))
+    
     energy_dict = {}
     with open(path, "r") as f:
         for linea in f:
@@ -60,6 +64,9 @@ def mostrar_histograma_global(reactantsDegree, productsDegree, rango=(0, 100)):
 
 
 def main(file):
+    base = os.path.dirname(os.path.abspath(__file__))
+    file = os.path.abspath(os.path.join(base, file))
+
     uniqueSpecies, reactions = lk.parseChemFile(file)
 
     reactantsMatrix = []
@@ -93,8 +100,8 @@ def main(file):
     reactantsDegree_sorted = [reactantsDegree[uniqueSpecies.index(s)] for s in ordered_species]
     productsDegree_sorted = [productsDegree[uniqueSpecies.index(s)] for s in ordered_species]
 
-    np.save(r"C:\Users\isafe\OneDrive\Desktop\Escritorio\FÍSICA\TFG\TFG\reactantsDegree_sorted.npy", np.array(reactantsDegree_sorted))
-    np.save(r"C:\Users\isafe\OneDrive\Desktop\Escritorio\FÍSICA\TFG\TFG\rproductsDegree_sorted.npy", np.array(productsDegree_sorted))
+    np.save('reactantsDegree_sorted.npy', np.array(reactantsDegree_sorted))
+    np.save('productsDegree_sorted.npy', np.array(productsDegree_sorted))
 
     mostrar_matriz(reactantsMatrix, ordered_species, "Matriz Ponderada Reactivos", cmap='Blues')
     mostrar_matriz(productsMatrix, ordered_species, "Matriz Ponderada Productos", cmap='Blues')

@@ -39,6 +39,8 @@ def main(file):
     return 0
 
 def parseChemFile(file):
+    base=os.path.dirname(os.path.abspath(__file__))
+    file=os.path.abspath(os.path.join(base,file))
     """
     Parse a chemical file and extract relevant information.
     """
