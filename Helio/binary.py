@@ -4,6 +4,9 @@ import numpy as np
 import os
 
 def cargar_energias(path="databaseStateEnergyHe.txt"):
+    base = os.path.dirname(os.path.abspath(__file__))
+    path = os.path.abspath(os.path.join(base, path))
+    
     energy_dict = {}
     with open(path, "r") as f:
         for linea in f:
