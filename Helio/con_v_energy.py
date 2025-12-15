@@ -1,12 +1,16 @@
+import os
 import numpy as np
 import matplotlib.pyplot as plt
 from loki import parseChemFile
 
 def load_energies():
     energy_dict = {}
-    with open("databaseStateEnergyHe.txt", 'r') as file:
-        for line in file:
-            species, energy = line.strip().split()
+    base = os.path.dirname(os.path.abspath(__file__))
+    path = os.path.abspath(os.path.join(base, "databaseStateEnergyHe.txt"))
+    with open(path, 'r') as file:
+        lines = file.readlines()
+        for line in lines[2:]:  # Comienza en índice 2 (tercera línea)
+            species, energy = line.split()
             energy_dict[species] = float(energy)
     return energy_dict
 
@@ -21,7 +25,7 @@ def plot_connectivity_vs_energy(energy_dict, connectivity, species_names, title)
             y.append(connectivity[i])
             labels.append(species)
         else:
-            print(f"⚠️ Warning: '{species}' not found in energy data.")
+            print(f"Warning!!: '{species}' not found in energy data.")
 
     plt.figure(figsize=(10, 6))
     plt.scatter(x, y, color='purple', alpha=0.7)
@@ -44,8 +48,9 @@ def plot_connectivity_vs_energy(energy_dict, connectivity, species_names, title)
     plt.show()
 
 if __name__ == "__main__":
+    base = os.path.dirname(os.path.abspath(__file__))
     # Cargar conectividad (elige según el caso)
-    connectivity = np.load("reactantsDegree.npy")  # o "productsDegree.npy"
+    connectivity = np.load(os.path.join(base, "reactantsDegree.npy"))  # o "productsDegree.npy"
 
     # Extraer especies directamente desde el archivo .chem
     species, _ = parseChemFile("helium.chem")

@@ -88,9 +88,10 @@ def main(file):
     plt.ylabel('Número de especies')
     plt.legend()
     # plt.show()
-    plt.savefig("histograma_grado_conectividad.png", bbox_inches='tight', dpi=300)
+    plt.savefig(os.path.join(here, "histograma_grado_conectividad.png"), bbox_inches='tight', dpi=300)
 
 def mostrar_matriz_binaria(matriz, speciesList, titulo):
+    here = os.path.dirname(os.path.abspath(__file__))
     plt.figure(figsize=(10, 6))
     plt.imshow(matriz, cmap='binary', interpolation='nearest', aspect='auto')
     plt.title(titulo)
@@ -98,7 +99,7 @@ def mostrar_matriz_binaria(matriz, speciesList, titulo):
     plt.ylabel("Reacciones")
     plt.xticks(range(len(speciesList)), speciesList, rotation=90)
     plt.tight_layout()
-    plt.savefig(f"{titulo.replace(' ', '_').lower()}.png", bbox_inches='tight', dpi=300)
+    plt.savefig(os.path.join(here, f"{titulo.replace(' ', '_').lower()}.png"), bbox_inches='tight', dpi=300)
     plt.close()
 
 if __name__ == "__main__":

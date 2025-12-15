@@ -47,6 +47,7 @@ def construir_red_bipartita(uniqueSpecies, reactions):
 
 
 def dibujar_red_bipartita(B, species_nodes, reaction_nodes, titulo="Red Bipartita", height=40):
+    base = os.path.dirname(os.path.abspath(__file__))
     plt.figure(figsize=(18, height))
     pos = nx.bipartite_layout(B, species_nodes)
     nx.draw(B, pos, with_labels=True, node_size=50,
@@ -57,11 +58,12 @@ def dibujar_red_bipartita(B, species_nodes, reaction_nodes, titulo="Red Bipartit
     plt.tight_layout()
     # plt.show()
     plt.gcf().set_size_inches(6, 4)           # tamaño físico razonable
-    plt.savefig("red_bipartita.pdf", bbox_inches="tight")
+    plt.savefig(os.path.join(base, "red_bipartita.pdf"), bbox_inches="tight")
     plt.close()
 
 
 def main():
+    base = os.path.dirname(os.path.abspath(__file__))
     uniqueSpecies, reactions = lk.parseChemFile("helium.chem")
     species_nodes = [s for s in uniqueSpecies if s != 'e']
     reaction_nodes = [f"R{i}" for i in range(len(reactions))]
@@ -96,7 +98,7 @@ def main():
     plt.tight_layout()
     # plt.show()
     # Guardar imagen
-    plt.savefig("red_bipartita_comunidades.png")
+    plt.savefig(os.path.join(base, "red_bipartita_comunidades.png"))
 
     # Calcular modularidad
     modularidad = community_louvain.modularity(partition, G)

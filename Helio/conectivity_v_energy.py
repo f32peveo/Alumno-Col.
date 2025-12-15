@@ -114,7 +114,7 @@ def plot_connectivity_vs_energy_xspace(energy_dict, connectivity, species_names,
     plt.tight_layout()
     # plt.show()
     # Guardar grafica
-    plt.savefig(f"{title.replace(' ', '_')}.png", bbox_inches='tight', dpi=300)
+    plt.savefig(os.path.join(base_path, f"{title.replace(' ', '_')}.png"), bbox_inches='tight', dpi=300)
 
 if __name__ == "__main__":
     base_path = os.path.dirname(os.path.abspath(__file__))

@@ -18,6 +18,7 @@ def cargar_energias(path="databaseStateEnergyHe.txt"):
     return energy_dict
 
 def mostrar_matriz(matriz, speciesList, titulo, cmap='Blues'):
+    base = os.path.dirname(os.path.abspath(__file__))
     plt.figure(figsize=(10, 6))
     plt.imshow(matriz, cmap=cmap, interpolation='nearest', aspect='auto')
     plt.title(titulo)
@@ -25,7 +26,7 @@ def mostrar_matriz(matriz, speciesList, titulo, cmap='Blues'):
     plt.ylabel("Reacciones")
     plt.xticks(range(len(speciesList)), speciesList, rotation=90)
     plt.tight_layout()
-    plt.savefig(f"{titulo.replace(' ', '_').lower()}.png")
+    plt.savefig(os.path.join(base,f"{titulo.replace(' ', '_').lower()}.png"))
     plt.show()
     plt.close()
 
@@ -84,24 +85,24 @@ def main(file):
         reactantsMatrix.append(list(reactantsRow.values()))
         productsMatrix.append(list(productsRow.values()))
 
-    np.save('reactantsMatrix_w.npy', reactantsMatrix)
-    np.save('productsMatrix_w.npy', productsMatrix)
+    np.save(os.path.join(base, 'reactantsMatrix_w.npy'), reactantsMatrix)
+    np.save(os.path.join(base, 'productsMatrix_w.npy'), productsMatrix)
 
     reactantsDegree = calcular_grados(reactantsMatrix)
     productsDegree = calcular_grados(productsMatrix)
 
-    np.save('reactantsDegree_w.npy', reactantsDegree)
-    np.save('productsDegree_w.npy', productsDegree)
+    np.save(os.path.join(base, 'reactantsDegree_w.npy'), reactantsDegree)
+    np.save(os.path.join(base, 'productsDegree_w.npy'), productsDegree)
 
     energy_dict = cargar_energias()
     ordered_species = [s for s, _ in sorted(energy_dict.items(), key=lambda x: x[1]) if s in uniqueSpecies]
-    np.save('ordered_species.npy', np.array(ordered_species))
+    np.save(os.path.join(base, 'ordered_species.npy'), np.array(ordered_species))
 
     reactantsDegree_sorted = [reactantsDegree[uniqueSpecies.index(s)] for s in ordered_species]
     productsDegree_sorted = [productsDegree[uniqueSpecies.index(s)] for s in ordered_species]
 
-    np.save('reactantsDegree_sorted.npy', np.array(reactantsDegree_sorted))
-    np.save('productsDegree_sorted.npy', np.array(productsDegree_sorted))
+    np.save(os.path.join(base, 'reactantsDegree_sorted.npy'), np.array(reactantsDegree_sorted))
+    np.save(os.path.join(base, 'productsDegree_sorted.npy'), np.array(productsDegree_sorted))
 
     mostrar_matriz(reactantsMatrix, ordered_species, "Matriz Ponderada Reactivos", cmap='Blues')
     mostrar_matriz(productsMatrix, ordered_species, "Matriz Ponderada Productos", cmap='Blues')
