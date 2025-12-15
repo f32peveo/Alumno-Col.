@@ -1,11 +1,14 @@
 import numpy as np
 import matplotlib.pyplot as plt
+import os
+
+base = os.path.dirname(os.path.abspath(__file__))
 
 # Cargar datos desde archivos .npy
-reactantsMatrix = np.load('reactantsMatrix.npy')
-productsMatrix = np.load('productsMatrix.npy')
-reactantsDegree = np.load('reactantsDegree.npy')
-productsDegree = np.load('productsDegree.npy')
+reactantsMatrix = np.load(os.path.join(base, 'reactantsMatrix.npy'))
+productsMatrix = np.load(os.path.join(base, 'productsMatrix.npy'))
+reactantsDegree = np.load(os.path.join(base, 'reactantsDegree.npy'))
+productsDegree = np.load(os.path.join(base, 'productsDegree.npy'))
 
 # Asegurar que son arrays de numpy
 reactantsDegree = np.array(reactantsDegree)
